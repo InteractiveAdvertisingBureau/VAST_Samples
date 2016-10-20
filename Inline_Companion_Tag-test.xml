@@ -1,0 +1,36 @@
+<VAST version="4.0">
+    <Ad id="20004" sequence="1" conditionalAd="0">
+        <InLine>
+            <AdSystem version="4.0">iabtechlab</AdSystem>
+            
+            <AdTitle>
+                <![CDATA[VAST 4.0 Pilot - Scenario 5]]>
+            </AdTitle>
+            <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
+            <Description>
+                <![CDATA[Less than three but at least one media file is present.  The player and file should be of different quality.]]>
+            </Description>
+            <Pricing model="cpm" currency="USD">
+                <![CDATA[ 25.00 ]]>
+            </Pricing>
+            
+            <Error>http://myErrorURL/error</Error>
+            <Creatives>
+                <Creative id="5480" sequence="1" adId="2447226" apiFramework="VAST">
+                    <UniversalAdId idRegistry="Ad-ID" idValue="GUID">8465</UniversalAdId>
+    			<CompanionAds>
+    				<Companion id="1232" width="100" height="150" assetWidth="250" assetHeight="200" expandedWidth="350" expandedHeight="250" apiFramework="VAST" adSlotID="3214" pxratio="1400">
+    				</Companion>
+    			</CompanionAds>
+                </Creative>
+            </Creatives>
+            <Extensions>
+                <Extension type="iab-Count">
+                    <total_available>
+                        <![CDATA[ 2 ]]>
+                    </total_available>
+                </Extension>
+            </Extensions>
+        </InLine>
+    </Ad>
+</VAST>
