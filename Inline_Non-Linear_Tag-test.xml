@@ -1,4 +1,4 @@
-<VAST version="4.0">
+<VAST version="3.0">
     <Ad id="20005" sequence="1" conditionalAd="1">
         <InLine>
             <AdSystem version="4.0">iabtechlab</AdSystem>
