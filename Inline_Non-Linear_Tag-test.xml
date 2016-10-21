@@ -23,13 +23,14 @@
             </Pricing>
             
             <Creatives>
-                <Creative id="5480" sequence="1" apiFramework="VAST">
+                <Creative id="5480" sequence="1" adId="2447226" apiFramework="VAST">
+                     <UniversalAdId idRegistry="Ad-ID" idValue="GUID">8465</UniversalAdId>
                     <NonLinearAds>
-                        <NonLinear width="480" height="70" minSuggestedDuration="00:00:05" scalable="true" maintainAspectRatio="true">
+                        <NonLinear width="480" height="150" minSuggestedDuration="00:00:05" scalable="true" maintainAspectRatio="true">
                             <StaticResource creativeType="image/png">
                                 <![CDATA[
-                                https://pagead2.googlesyndication.com/pagead/imgad?id=CICAgKDTwKyTLBDgAxhGMghR083HVMUH8w
-                                ]]>
+                                http://mms.businesswire.com/media/20150623005446/en/473787/21/iab_tech_lab.jpg
+                            ]]>
                             </StaticResource>
         					<NonLinearClickThrough>
         						<![CDATA[http://iabtechlab.com]]>
