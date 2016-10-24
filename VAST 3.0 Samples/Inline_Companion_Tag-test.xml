@@ -8,7 +8,7 @@
             </AdTitle>
             <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
             <Description>
-                <![CDATA[Less than three but at least one media file is present.  The player and file should be of different quality.]]>
+                <![CDATA[This is sample companion ad tag with Linear ad tag. This tag while showing video ad on the player, will show a companion ad beside the player where it can be fitted. At most 3 companion ads can be placed. Modify accordingly to see your own content.]]>
             </Description>
             <Pricing model="cpm" currency="USD">
                 <![CDATA[ 25.00 ]]>

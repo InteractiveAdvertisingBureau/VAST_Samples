@@ -1,4 +1,4 @@
-<VAST version="3.0">
+<VAST version="4.0">
     <Ad id="20010" sequence="1" conditionalAd="0">
         <Wrapper followAdditionalWrappers="0" allowMultipleAds="1" fallbackOnNoAd="0">
             <AdSystem version="4.0">iabtechlab</AdSystem>
