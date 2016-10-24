@@ -17,7 +17,6 @@
             <Error>http://myErrorURL/error</Error>
             <Creatives>
                 <Creative id="5480" sequence="1" adId="2447226" apiFramework="VAST">
-                  <UniversalAdId idRegistry="Ad-ID" idValue="GUID">8465</UniversalAdId>
                     <Linear>
                         <TrackingEvents>
                            <Tracking event="start" offset="09:15:23">http://myTrackingURL/start</Tracking>

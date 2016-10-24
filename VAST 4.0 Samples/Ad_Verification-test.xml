@@ -1,0 +1,56 @@
+<VAST version="3.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <Ad id="20001" sequence="1" conditionalAd="1">
+        <InLine>
+            <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
+
+            <AdSystem version="4.0">iabtechlab</AdSystem>
+
+            <Pricing model="cpm" currency="USD">
+                <![CDATA[ 25.00 ]]>
+            </Pricing>
+            <Error>http://myErrorURL/error</Error>
+            <AdVerifications>
+                <Verification vendor="iab">
+                    <FlashResource apiFramework="VAST">
+                        http://demo.tremormedia.com/proddev/vast/300x250_linear_1.swf
+                    </FlashResource>
+                </Verification>
+            </AdVerifications>
+            <AdTitle>iabtechlab video ad</AdTitle>
+
+            <Creatives>
+                <Creative id="5480" sequence="1" adId="2447226" apiFramework="VAST">
+                  <UniversalAdId idRegistry="Ad-ID" idValue="GUID">8465</UniversalAdId>
+                    <Linear>
+                        <TrackingEvents>
+                           <Tracking event="start" offset="12:22:11">http://myTrackingURL/start</Tracking>
+                            <Tracking event="firstQuartile">http://myTrackingURL/firstQuartile</Tracking>
+                            <Tracking event="midpoint">http://myTrackingURL/midpoint</Tracking>
+                            <Tracking event="thirdQuartile">http://myTrackingURL/thirdQuartile</Tracking>
+                            <Tracking event="complete">http://myTrackingURL/complete</Tracking>
+                        </TrackingEvents>
+                        <Duration>00:00:16</Duration>
+                        <MediaFiles>
+                            <MediaFile id="5241" delivery="progressive" type="video/x-flv" bitrate="500" width="400" height="300" minBitrate="360" maxBitrate="1080" scalable="1" maintainAspectRatio="1" codec="0" apiFramework="VAST">
+                                <![CDATA[http://cdnp.tremormedia.com/video/acudeo/Carrot_400x300_500kb.flv]]>
+                            </MediaFile>
+                        </MediaFiles>
+                        
+                        <VideoClicks>
+                            <ClickThrough id="blog">
+                                <![CDATA[https://iabtechlab.com]]>
+                            </ClickThrough>
+                        </VideoClicks>
+                    </Linear>
+                </Creative>
+            </Creatives>
+            <Extensions>
+                <Extension type="iab-Count">
+                    <total_available>
+                        <![CDATA[ 2 ]]>
+                    </total_available>
+                </Extension>
+            </Extensions>
+        </InLine>
+    </Ad>
+</VAST>
