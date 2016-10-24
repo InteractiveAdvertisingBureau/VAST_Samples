@@ -1,5 +1,5 @@
 <VAST version="3.0">
-    <Ad id="20004" sequence="1" conditionalAd="0">
+    <Ad id="20004">
         <InLine>
             <AdSystem version="4.0">iabtechlab</AdSystem>
             
@@ -16,12 +16,92 @@
             
             <Error>http://myErrorURL/error</Error>
             <Creatives>
+                <Creative id="57859154776" sequence="1">
+            <Linear>
+            <Duration>00:00:10</Duration>
+            <VideoClicks>
+            <ClickThrough id="GDFP">
+            <![CDATA[
+            https://pubads.g.doubleclick.net/pcs/click?xai=AKAOjsuZiX6Q2ESCDjgbCVzsHsPNYjVCuUTXaQkAMMnBR6ZGPzn7TZO76dIDDzFrYwu2ELEx7kK7ZADOuOzE17nM2d4xzwIwSWoIaS8AWM4b8BnFcbllVzTUM-iDdql2HpvHtSVpkBuUTpy1SXqD25MpbSFNj37FA_2EIvPl5nHZ3eL2v4QMRuvpfl4kgf5_VRTULwuInKJButEtOwf90pePgGFgA7Zokd4eIDR2IAv1d3HhX9p2MuOG2Jdr7_PqH8DCU-rTsnVND95qlg&sig=Cg0ArKJSzCCK2bTEPFgY&adurl=https://developers.google.com/interactive-media-ads/docs/vastinspector_dual
+            ]]>
+            </ClickThrough>
+            <ClickTracking id="">
+            <![CDATA[
+            https://video-ad-stats.googlesyndication.com/video/client_events?event=6&web_property=ca-pub-3279133228669082&cpn=[CPN]&break_type=[BREAK_TYPE]&slot_pos=[SLOT_POS]&ad_id=[AD_ID]&ad_sys=[AD_SYS]&ad_len=[AD_LEN]&p_w=[P_W]&p_h=[P_H]&mt=[MT]&rwt=[RWT]&wt=[WT]&sdkv=[SDKV]&vol=[VOL]&content_v=[CONTENT_V]&conn=[CONN]&format=[FORMAT_NAMESPACE]_[FORMAT_TYPE]_[FORMAT_SUBTYPE]
+            ]]>
+            </ClickTracking>
+            </VideoClicks>
+            <MediaFiles>
+            <MediaFile id="GDFP" delivery="progressive" width="1280" height="720" type="video/mp4" bitrate="450" scalable="true" maintainAspectRatio="true">
+            <![CDATA[
+            https://redirector.gvt1.com/videoplayback/id/a33fc5b2685eb16e/itag/15/source/gfp_video_ads/requiressl/yes/acao/yes/mime/video%2Fmp4/ip/0.0.0.0/ipbits/0/expire/1477343936/sparams/ip,ipbits,expire,id,itag,source,requiressl,acao,mime/signature/1C8EEC9D1DE8975F05F135FA13D9B7D0F8A1468B.37130C90B3438CDAD70107BF773565FBAAF87ECA/key/ck2/file/file.mp4
+            ]]>
+            </MediaFile>
+            <MediaFile id="GDFP" delivery="progressive" width="176" height="144" type="video/3gpp" bitrate="36" scalable="true" maintainAspectRatio="true">
+            <![CDATA[
+            https://redirector.gvt1.com/videoplayback/id/a33fc5b2685eb16e/itag/17/source/gfp_video_ads/requiressl/yes/acao/yes/mime/video%2F3gpp/ip/0.0.0.0/ipbits/0/expire/1477343936/sparams/ip,ipbits,expire,id,itag,source,requiressl,acao,mime/signature/A833391462B638F82B6D1578E0AD5895F3906669.85D286DA2FE897F51078526E5C1567A98AFDF688/key/ck2/file/file.3gp
+            ]]>
+            </MediaFile>
+            <MediaFile id="GDFP" delivery="progressive" width="320" height="180" type="video/3gpp" bitrate="69" scalable="true" maintainAspectRatio="true">
+            <![CDATA[
+            https://redirector.gvt1.com/videoplayback/id/a33fc5b2685eb16e/itag/36/source/gfp_video_ads/requiressl/yes/acao/yes/mime/video%2F3gpp/ip/0.0.0.0/ipbits/0/expire/1477343936/sparams/ip,ipbits,expire,id,itag,source,requiressl,acao,mime/signature/246F183DBFF4F28EA372EC573D2B762E527A4D7A.2468D7F690A0F28A25D28A36D813CEEA117079F9/key/ck2/file/file.3gp
+            ]]>
+            </MediaFile>
+            <MediaFile id="GDFP" delivery="progressive" width="426" height="240" type="video/x-flv" bitrate="125" scalable="true" maintainAspectRatio="true">
+            <![CDATA[
+            https://redirector.gvt1.com/videoplayback/id/a33fc5b2685eb16e/itag/5/source/gfp_video_ads/requiressl/yes/acao/yes/mime/video%2Fx-flv/ip/0.0.0.0/ipbits/0/expire/1477343936/sparams/ip,ipbits,expire,id,itag,source,requiressl,acao,mime/signature/461A9451288716E54E4093C7AE5E3A16757B9DF5.B7258CB91FBB2AF2B993C5C0E48995A238BB2517/key/ck2/file/file.flv
+            ]]>
+            </MediaFile>
+            <MediaFile id="GDFP" delivery="progressive" width="854" height="480" type="video/x-flv" bitrate="190" scalable="true" maintainAspectRatio="true">
+            <![CDATA[
+            https://redirector.gvt1.com/videoplayback/id/a33fc5b2685eb16e/itag/35/source/gfp_video_ads/requiressl/yes/acao/yes/mime/video%2Fx-flv/ip/0.0.0.0/ipbits/0/expire/1477343936/sparams/ip,ipbits,expire,id,itag,source,requiressl,acao,mime/signature/B0AB55C54AC5AD3C17832C9BF8F4325DB99A66A1.5CBA6A1C3C029D7D2C2E1B27E58D4BA59E5AB138/key/ck2/file/file.flv
+            ]]>
+            </MediaFile>
+            <MediaFile id="GDFP" delivery="progressive" width="640" height="360" type="video/mp4" bitrate="118" scalable="true" maintainAspectRatio="true">
+            <![CDATA[
+            https://redirector.gvt1.com/videoplayback/id/a33fc5b2685eb16e/itag/18/source/gfp_video_ads/requiressl/yes/acao/yes/mime/video%2Fmp4/ip/0.0.0.0/ipbits/0/expire/1477343936/sparams/ip,ipbits,expire,id,itag,source,requiressl,acao,mime/signature/8D7BE959F74133C323BDABA3B296B289DFEDF7A7.7772DD546F002C98A1D24EFAF9CE3C410449F7D2/key/ck2/file/file.mp4
+            ]]>
+            </MediaFile>
+            <MediaFile id="GDFP" delivery="progressive" width="640" height="360" type="video/webm" bitrate="119" scalable="true" maintainAspectRatio="true">
+            <![CDATA[
+            https://redirector.gvt1.com/videoplayback/id/a33fc5b2685eb16e/itag/43/source/gfp_video_ads/requiressl/yes/acao/yes/mime/video%2Fwebm/ip/0.0.0.0/ipbits/0/expire/1477343936/sparams/ip,ipbits,expire,id,itag,source,requiressl,acao,mime/signature/85501F03B62CA2C85BF20515B33B87DCDAF2D1BD.114637EE404CC78DA7B6775AD51E0065E883A624/key/ck2/file/file.webm
+            ]]>
+            </MediaFile>
+            <MediaFile id="GDFP" delivery="progressive" width="640" height="360" type="video/x-flv" bitrate="173" scalable="true" maintainAspectRatio="true">
+            <![CDATA[
+            https://redirector.gvt1.com/videoplayback/id/a33fc5b2685eb16e/itag/34/source/gfp_video_ads/requiressl/yes/acao/yes/mime/video%2Fx-flv/ip/0.0.0.0/ipbits/0/expire/1477343936/sparams/ip,ipbits,expire,id,itag,source,requiressl,acao,mime/signature/03FA328E4588ACE28F17AB68884F475EBCFF3293.AABD4ECE8CCA9C96BA1D38487CD0916DB71631E2/key/ck2/file/file.flv
+            ]]>
+            </MediaFile>
+            <MediaFile id="GDFP" delivery="progressive" width="1280" height="720" type="video/webm" bitrate="229" scalable="true" maintainAspectRatio="true">
+            <![CDATA[
+            https://redirector.gvt1.com/videoplayback/id/a33fc5b2685eb16e/itag/45/source/gfp_video_ads/requiressl/yes/acao/yes/mime/video%2Fwebm/ip/0.0.0.0/ipbits/0/expire/1477343936/sparams/ip,ipbits,expire,id,itag,source,requiressl,acao,mime/signature/B524612259B7603D26B39ED41B2D48C1E2785846.6CDDC552D9B6A7F2E7E2B24DAC59255DB84F3E13/key/ck2/file/file.webm
+            ]]>
+            </MediaFile>
+            <MediaFile id="GDFP" delivery="progressive" width="854" height="480" type="video/webm" bitrate="132" scalable="true" maintainAspectRatio="true">
+            <![CDATA[
+            https://redirector.gvt1.com/videoplayback/id/a33fc5b2685eb16e/itag/44/source/gfp_video_ads/requiressl/yes/acao/yes/mime/video%2Fwebm/ip/0.0.0.0/ipbits/0/expire/1477343936/sparams/ip,ipbits,expire,id,itag,source,requiressl,acao,mime/signature/52C6475EE0F3FE4ADEB30E797656742E4737F555.4B9707FEB21825EC85C250DC21FCF5D442736FD2/key/ck2/file/file.webm
+            ]]>
+            </MediaFile>
+            <MediaFile id="GDFP" delivery="progressive" width="1280" height="720" type="video/mp4" bitrate="241" scalable="true" maintainAspectRatio="true">
+            <![CDATA[
+            https://redirector.gvt1.com/videoplayback/id/a33fc5b2685eb16e/itag/22/source/gfp_video_ads/requiressl/yes/acao/yes/mime/video%2Fmp4/ip/0.0.0.0/ipbits/0/expire/1477343936/sparams/ip,ipbits,expire,id,itag,source,requiressl,acao,mime/signature/98A8AE1CC254CB0E59654BD0F6AB78E6DFE97AF2.6E29BB09F70CFCAE4D4D73B354B17F076513020A/key/ck2/file/file.mp4
+            ]]>
+            </MediaFile>
+            </MediaFiles>
+            </Linear>
+            </Creative>
                 <Creative id="5480" sequence="1" adId="2447226" apiFramework="VAST">
                     <UniversalAdId idRegistry="Ad-ID" idValue="GUID">8465</UniversalAdId>
-    			<CompanionAds>
-    				<Companion id="1232" width="100" height="150" assetWidth="250" assetHeight="200" expandedWidth="350" expandedHeight="250" apiFramework="VAST" adSlotID="3214" pxratio="1400">
-    				</Companion>
-    			</CompanionAds>
+        			<CompanionAds>
+        				<Companion id="1232" width="300" height="250" assetWidth="250" assetHeight="200" expandedWidth="350" expandedHeight="250" apiFramework="VAST" adSlotID="3214" pxratio="1400">
+                               <StaticResource creativeType="image/png">
+                                    <![CDATA[https://www.iab.com/wp-content/uploads/2014/09/iab-tech-lab-6-644x290.png]]>
+                                </StaticResource>
+                                <CompanionClickThrough>
+                                    <![CDATA[https://iabtechlab.com]]>
+                                </CompanionClickThrough>   
+        				</Companion>
+        			</CompanionAds>
                 </Creative>
             </Creatives>
             <Extensions>
