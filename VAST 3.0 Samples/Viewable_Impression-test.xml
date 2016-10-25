@@ -2,7 +2,7 @@
     <Ad id="20010">
         <Wrapper followAdditionalWrappers="0" allowMultipleAds="1" fallbackOnNoAd="0">
             <AdSystem version="4.0">iabtechlab</AdSystem>
-            <VASTAdTagURI><![CDATA[https://raw.githubusercontent.com/InteractiveAdvertisingBureau/VAST_UseCases/development/VAST%203.0%20Samples/Inline_Companion_Tag-test.xml]]></VASTAdTagURI>
+            <VASTAdTagURI><![CDATA[https://raw.githubusercontent.com/InteractiveAdvertisingBureau/VAST_UseCases/master/VAST%203.0%20Samples/Inline_Companion_Tag-test.xml]]></VASTAdTagURI>
             <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
             <Error>http://myErrorURL/error</Error>
             <ViewableImpression id="1543">
