@@ -40,7 +40,6 @@
                     </Linear>
                 </Creative>
                 <Creative id="5480" sequence="1" adId="2447226" apiFramework="VAST">
-                    <UniversalAdId idRegistry="Ad-ID" idValue="GUID">8465</UniversalAdId>
         			<CompanionAds>
         				<Companion id="1232" width="300" height="250" assetWidth="250" assetHeight="200" expandedWidth="350" expandedHeight="250" apiFramework="VAST" adSlotID="3214" pxratio="1400">
                                <StaticResource creativeType="image/png">
