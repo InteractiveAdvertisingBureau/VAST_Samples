@@ -1,8 +1,8 @@
 <VAST version="3.0">
-    <Ad id="20010" sequence="1" conditionalAd="0">
+    <Ad id="20010">
         <Wrapper followAdditionalWrappers="0" allowMultipleAds="1" fallbackOnNoAd="0">
             <AdSystem version="4.0">iabtechlab</AdSystem>
-            <VASTAdTagURI><![CDATA[http://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243]]></VASTAdTagURI>
+            <VASTAdTagURI><![CDATA[https://raw.githubusercontent.com/InteractiveAdvertisingBureau/VAST_UseCases/development/VAST%203.0%20Samples/Inline_Companion_Tag-test.xml]]></VASTAdTagURI>
             <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
             <Error>http://myErrorURL/error</Error>
             <ViewableImpression id="1543">

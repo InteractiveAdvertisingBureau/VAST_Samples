@@ -1,5 +1,5 @@
 <VAST version="3.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <Ad id="20001" sequence="1" conditionalAd="1">
+    <Ad id="20001">
         <InLine>
             <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
 
@@ -14,7 +14,6 @@
 
             <Creatives>
                 <Creative id="5480" sequence="1" adId="2447226" apiFramework="VAST">
-                  <UniversalAdId idRegistry="Ad-ID" idValue="GUID">8465</UniversalAdId>
                     <Linear>
                         <TrackingEvents>
                            <Tracking event="start" offset="10:05:20">http://myTrackingURL/start</Tracking>
