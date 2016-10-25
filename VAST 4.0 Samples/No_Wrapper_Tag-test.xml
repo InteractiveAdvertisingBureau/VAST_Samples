@@ -1,5 +1,5 @@
 <VAST version="4.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <Ad id="20001" sequence="1" conditionalAd="1">
+    <Ad id="20001" sequence="1" conditionalAd="false">
         <InLine>
             <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
 
@@ -8,6 +8,7 @@
             <Pricing model="cpm" currency="USD">
                 <![CDATA[ 25.00 ]]>
             </Pricing>
+            
             <Error>http://myErrorURL/error</Error>
             
             <AdTitle>iabtechlab video ad</AdTitle>

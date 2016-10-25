@@ -1,8 +1,11 @@
 <VAST version="4.0">
-    <Ad id="20011" sequence="1" conditionalAd="1">
+    <Ad id="20011" sequence="1" conditionalAd="false">
         <Wrapper followAdditionalWrappers="0" allowMultipleAds="1" fallbackOnNoAd="0">
             <AdSystem version="4.0">iabtechlab</AdSystem>
-            <VASTAdTagURI><![CDATA[http://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243]]></VASTAdTagURI>
+            <VASTAdTagURI><![CDATA[https://raw.githubusercontent.com/InteractiveAdvertisingBureau/VAST_UseCases/development/VAST%203.0%20Samples/Inline_Companion_Tag-test.xml]]></VASTAdTagURI>
+            <Description>
+                <![CDATA[A VAST wrapper is a VAST response that does not contain a VAST inline ad but instead contains information about a redirect to a third party ad server. This allows different parties to serve ad inventory from a secondary ad server. A VAST wrapper redirect can also point to another VAST wrapper, creating a chain of VAST wrappers that finally point to a VAST inline ad. This is sample Wrapper ad tag presented by IAB TechLab. Modify VASTAdTagURI and other information as required.]]>
+            </Description>
             <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
             <Error>http://myErrorURL/error</Error>
             <Creatives>
