@@ -1,5 +1,5 @@
 <VAST version="3.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <Ad id="20001" sequence="1" conditionalAd="1">
+    <Ad id="20001">
         <InLine>
             <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
 
@@ -8,13 +8,13 @@
             <Pricing model="cpm" currency="USD">
                 <![CDATA[ 25.00 ]]>
             </Pricing>
+            
             <Error>http://myErrorURL/error</Error>
             
             <AdTitle>iabtechlab video ad</AdTitle>
 
             <Creatives>
                 <Creative id="5480" sequence="1" adId="2447226" apiFramework="VAST">
-                  <UniversalAdId idRegistry="Ad-ID" idValue="GUID">8465</UniversalAdId>
                     <Linear>
                         <TrackingEvents>
                            <Tracking event="start" offset="09:34:50">http://myTrackingURL/start</Tracking>
@@ -32,7 +32,7 @@
                         
                         <VideoClicks>
                             <ClickThrough id="blog">
-                                <![CDATA[https://iabtechlab.com]]>
+                               <![CDATA[https://iabtechlab.com]]>
                             </ClickThrough>
                         </VideoClicks>
                     </Linear>
