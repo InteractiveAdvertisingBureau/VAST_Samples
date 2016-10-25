@@ -1,0 +1,54 @@
+<VAST version="4.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <Ad id="20001" sequence="1" conditionalAd="true">
+        <InLine>
+            <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
+
+            <AdSystem version="4.0">iabtechlab</AdSystem>
+
+            <Pricing model="cpm" currency="USD">
+                <![CDATA[ 25.00 ]]>
+            </Pricing>
+            <Error>http://myErrorURL/error</Error>
+            
+            <AdTitle>iabtechlab video ad</AdTitle>
+
+            <Creatives>
+                <Creative id="5480" sequence="1" adId="2447226" apiFramework="VAST">
+                  <UniversalAdId idRegistry="Ad-ID" idValue="GUID">8465</UniversalAdId>
+                    <Linear>
+                        <TrackingEvents>
+                           <Tracking event="start" offset="10:32:23">http://myTrackingURL/start</Tracking>
+                            <Tracking event="firstQuartile">http://myTrackingURL/firstQuartile</Tracking>
+                            <Tracking event="midpoint">http://myTrackingURL/midpoint</Tracking>
+                            <Tracking event="thirdQuartile">http://myTrackingURL/thirdQuartile</Tracking>
+                            <Tracking event="complete">http://myTrackingURL/complete</Tracking>
+                        </TrackingEvents>
+                        <Duration>00:00:16</Duration>
+                        <MediaFiles>
+                            <MediaFile id="5241" delivery="progressive" type="video/mp4" bitrate="2500" width="1280" height="720" minBitrate="1800" maxBitrate="2500" scalable="1" maintainAspectRatio="1" codec="0" >
+                                <![CDATA[http://cdn.iabcdn.com/website/engineering/vast_4_0_pilot/vast_4.0_pilot-iab-hd.mp4]]>
+                            </MediaFile>
+                            <Mezzanine><![CDATA[http://pilot.iabtechlab.com/beacon?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235]]></Mezzanine>
+                            <InteractiveCreativeFile>
+                                <![CDATA[http://pilot.iabtechlab.com/beacon?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235]]>
+                            </InteractiveCreativeFile>
+                        </MediaFiles>
+                        
+                        <VideoClicks>
+                            <ClickThrough id="blog">
+                                <![CDATA[https://iabtechlab.com]]>
+                            </ClickThrough>
+                        </VideoClicks>
+                    </Linear>
+                </Creative>
+            </Creatives>
+            <Extensions>
+                <Extension type="iab-Count">
+                    <total_available>
+                        <![CDATA[ 2 ]]>
+                    </total_available>
+                </Extension>
+            </Extensions>
+        </InLine>
+    </Ad>
+</VAST>

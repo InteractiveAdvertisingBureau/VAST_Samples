@@ -1,4 +1,4 @@
-<VAST version="4.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<VAST version="3.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <Ad id="20002" sequence="1" conditionalAd="0">
         <InLine>
             <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
