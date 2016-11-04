@@ -1,0 +1,133 @@
+<VideoAdServingTemplate>
+	<Ad id="preroll-1">
+		<InLine>
+			<AdSystem>scanscout</AdSystem>
+			<AdTitle>5700147</AdTitle>
+			<Impression>
+				<URL id="comscore">
+				<![CDATA[
+				http://b.scorecardresearch.com/b?C1=1&C2=6000003&C3=0000000200500000197000000&C4=us&C7=http://www.scanscout.com&C8=scanscout.com&C9=http://www.scanscout.com&C10=xn&rn=-1946315152
+				]]>
+				</URL>
+				<URL id="comscore">
+				<![CDATA[
+				http://beacon.securestudies.com/scripts/beacon.dll?C1=1&C2=6000003&C3=&C4=&C5=070000&C6=2005&C7=&rn=149424314
+				]]>
+				</URL>
+				<URL>
+				<![CDATA[ http://domdex.com/l?c=26 ]]>
+				</URL>
+				<URL id="scanscout">
+				<![CDATA[
+				http://app.scanscout.com/ssframework/log/log.png?a=logitemaction&CbC=1&CbF=true&EC=3&RC=3&SmC=2&AmN=1&CbM=1.0E-5&VI=5a33ec4ffcdc3cab1c5680270a506db2&admode=preroll&PRI=4789421146443017981&RvN=1&RprC=0&ADsn=15&VcaI=192,197&RrC=0&VgI=5a33ec4ffcdc3cab1c5680270a506db2&SfF=true&AVI=142&Ust=ma&Uctry=us&CI=1177822&AC=4&PI=567&Udma=506&ADI=5700147&VclF=true
+				]]>
+				</URL>
+				<URL id="external">
+				<![CDATA[
+				http://demo.scanscout.com/product/trackingPixel.png
+				]]>
+				</URL>
+				<URL id="comscore">
+				<![CDATA[
+				http://b.scorecardresearch.com/b?C1=1&C2=6000003&C3=0000117782200000197000000&C4=us&C7=http://www.scanscout.com&C8=scanscout.com&C9=http://www.scanscout.com&C10=xn&rn=-1262573570
+				]]>
+				</URL>
+				<URL id="comscore">
+				<![CDATA[
+				http://beacon.securestudies.com/scripts/beacon.dll?C1=1&C2=6000003&C3=&C4=&C5=010000&C6=1177822&C7=&rn=2041004021
+				]]>
+				</URL>
+			</Impression>
+			<TrackingEvents>
+				<Tracking event="start">
+				<URL id="scanscout">
+				<![CDATA[
+				http://app.scanscout.com/ssframework/log/log.png?a=logitemaction&CbC=1&CbF=true&vastrequest=true&EC=7&RC=3&SmC=2&CbM=1.0E-5&VI=5a33ec4ffcdc3cab1c5680270a506db2&admode=preroll&PRI=4789421146443017981&RprC=0&ADsn=15&Eipct=0&VcaI=192,197&RrC=0&VgI=5a33ec4ffcdc3cab1c5680270a506db2&AVI=142&Ust=ma&Uctry=us&CI=1177822&AC=4&PI=567&Udma=506&ADI=5700147&EiN=1&VclF=true
+				]]>
+				</URL>
+				<URL id="external">
+				<![CDATA[
+				http://demo.scanscout.com/product/trackingPixel.png?type=VideoStart
+				]]>
+				</URL>
+				</Tracking>
+				<Tracking event="firstQuartile">
+				<URL id="scanscout">
+				<![CDATA[
+				http://app.scanscout.com/ssframework/log/log.png?a=logitemaction&CbC=1&CbF=true&vastrequest=true&EC=7&RC=3&SmC=2&CbM=1.0E-5&VI=5a33ec4ffcdc3cab1c5680270a506db2&admode=preroll&PRI=4789421146443017981&RprC=0&ADsn=15&Eipct=25&VcaI=192,197&RrC=0&VgI=5a33ec4ffcdc3cab1c5680270a506db2&AVI=142&Ust=ma&Uctry=us&CI=1177822&AC=4&PI=567&Udma=506&ADI=5700147&EiN=1&VclF=true
+				]]>
+				</URL>
+				</Tracking>
+				<Tracking event="midpoint">
+				<URL id="scanscout">
+				<![CDATA[
+				http://app.scanscout.com/ssframework/log/log.png?a=logitemaction&CbC=1&CbF=true&vastrequest=true&EC=7&RC=3&SmC=2&CbM=1.0E-5&VI=5a33ec4ffcdc3cab1c5680270a506db2&admode=preroll&PRI=4789421146443017981&RprC=0&ADsn=15&Eipct=50&VcaI=192,197&RrC=0&VgI=5a33ec4ffcdc3cab1c5680270a506db2&AVI=142&Ust=ma&Uctry=us&CI=1177822&AC=4&PI=567&Udma=506&ADI=5700147&EiN=1&VclF=true
+				]]>
+				</URL>
+				</Tracking>
+				<Tracking event="thirdQuartile">
+				<URL id="scanscout">
+				<![CDATA[
+				http://app.scanscout.com/ssframework/log/log.png?a=logitemaction&CbC=1&CbF=true&vastrequest=true&EC=7&RC=3&SmC=2&CbM=1.0E-5&VI=5a33ec4ffcdc3cab1c5680270a506db2&admode=preroll&PRI=4789421146443017981&RprC=0&ADsn=15&Eipct=75&VcaI=192,197&RrC=0&VgI=5a33ec4ffcdc3cab1c5680270a506db2&AVI=142&Ust=ma&Uctry=us&CI=1177822&AC=4&PI=567&Udma=506&ADI=5700147&EiN=1&VclF=true
+				]]>
+				</URL>
+				</Tracking>
+				<Tracking event="complete">
+				<URL id="scanscout">
+				<![CDATA[
+				http://app.scanscout.com/ssframework/log/log.png?a=logitemaction&CbC=1&CbF=true&vastrequest=true&EC=7&RC=3&SmC=2&CbM=1.0E-5&VI=5a33ec4ffcdc3cab1c5680270a506db2&admode=preroll&PRI=4789421146443017981&RprC=0&ADsn=15&Eipct=100&VcaI=192,197&RrC=0&VgI=5a33ec4ffcdc3cab1c5680270a506db2&AVI=142&Ust=ma&Uctry=us&CI=1177822&AC=4&PI=567&Udma=506&ADI=5700147&EiN=1&VclF=true
+				]]>
+				</URL>
+				<URL id="external">
+				<![CDATA[
+				http://demo.scanscout.com/product/trackingPixel.png?type=VideoComplete
+				]]>
+				</URL>
+				</Tracking>
+				<Tracking event="pause">
+				<URL id="scanscout">
+				<![CDATA[
+				http://app.scanscout.com/ssframework/log/log.png?a=logitemaction&CbC=1&CbF=true&EC=4&RC=3&SmC=2&CbM=1.0E-5&VI=5a33ec4ffcdc3cab1c5680270a506db2&admode=preroll&PRI=4789421146443017981&RprC=0&ADsn=15&VcaI=192,197&RrC=0&VgI=5a33ec4ffcdc3cab1c5680270a506db2&AVI=142&Ust=ma&Uctry=us&CI=1177822&AC=4&PI=567&Udma=506&ADI=5700147&VclF=true
+				]]>
+				</URL>
+				</Tracking>
+			</TrackingEvents>
+			<Video>
+				<Duration>00:00:15</Duration>
+				<AdID>preroll-1</AdID>
+				<VideoClicks>
+					<ClickThrough>
+					<URL id="scanscout">
+					<![CDATA[ http://www.calphalon.com ]]>
+					</URL>
+					</ClickThrough>
+					<ClickTracking>
+					<URL id="scanscout">
+					<![CDATA[
+					http://app.scanscout.com/ssframework/log/log.png?a=logitemaction&CbC=1&CbF=true&EC=2&RC=3&SmC=2&CbM=1.0E-5&VI=5a33ec4ffcdc3cab1c5680270a506db2&admode=preroll&PRI=4789421146443017981&RprC=0&ADsn=15&VcaI=192,197&RrC=0&VgI=5a33ec4ffcdc3cab1c5680270a506db2&AVI=142&Ust=ma&Uctry=us&CI=1177822&AC=4&PI=567&Udma=506&ADI=5700147&VclF=true
+					]]>
+					</URL>
+					</ClickTracking>
+				</VideoClicks>
+				<MediaFiles>
+					<MediaFile width="600" type="video/x-flv" height="396" delivery="progressive" bitrate="496">
+					<URL>
+					<![CDATA[
+					http://media.scanscout.com/ads/partner1_ecdf0740-75b9-40ef-b4d6-06cf03306c8e.flv
+					]]>
+					</URL>
+					</MediaFile>
+				</MediaFiles>
+			</Video>
+			<CompanionAds>
+				<Companion width="300" resourceType="HTML" id="532354" height="250">
+				<Code>
+				<![CDATA[
+				<a onClick="alert('click');var i= new Image(1,1); i.src='http://app.scanscout.com/ssframework/log/log.png?a=logitemaction&RI=532354&CbC=1&CbF=true&EC=0&RC=0&SmC=2&CbM=1.0E-5&VI=5a33ec4ffcdc3cab1c5680270a506db2&admode=preroll&PRI=4789421146443017981&RprC=0&ADsn=15&VcaI=192,197&RrC=1&VgI=5a33ec4ffcdc3cab1c5680270a506db2&AVI=142&Ust=ma&Uctry=us&CI=1177822&AC=4&PI=567&Udma=506&ADI=5700147&VclF=true';" href="http://www.calphalon.com" target="_blank"><img src="http://s0.2mdn.net/viewad/2401054/300x250_PreRollCompanionBanner_30k.jpg" width=300 height=250 border=0></a> <img src="http://app.scanscout.com/ssframework/log/log.png?a=logitemaction&RI=532354&CbC=1&CbF=true&EC=1&RC=0&SmC=2&CbM=1.0E-5&VI=5a33ec4ffcdc3cab1c5680270a506db2&admode=preroll&PRI=4789421146443017981&RprC=0&ADsn=15&VcaI=192,197&RrC=1&VgI=5a33ec4ffcdc3cab1c5680270a506db2&AVI=142&Ust=ma&Uctry=us&CI=1177822&AC=4&PI=567&Udma=506&ADI=5700147&VclF=true" height="1" width="1">
+				]]>
+				</Code>
+				</Companion>
+			</CompanionAds>
+		</InLine>
+	</Ad>
+</VideoAdServingTemplate>
