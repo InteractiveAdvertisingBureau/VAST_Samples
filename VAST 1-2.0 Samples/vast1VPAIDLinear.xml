@@ -6,6 +6,7 @@
 			<Video>
 				<Duration>00:00:15</Duration>
 				<AdID>preroll-1</AdID>
+				<AdParameters apiFramework="vpaid"/>
 				<MediaFiles>
 					<MediaFile width="600" type="video/mp4" height="396" delivery="progressive" bitrate="496">
 					<URL>
