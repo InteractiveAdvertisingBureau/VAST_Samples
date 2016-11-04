@@ -6,13 +6,19 @@
 <Creatives>
 <Creative>
 <NonLinearAds>
-<NonLinear apiFramework="VPAID" height="60" width="380" id="overlay-1">
-<StaticResource creativeType="application/x-shockwave-flash">
-<![CDATA[
-http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D0
-]]>
-</StaticResource>
-</NonLinear>
+<NonLinear width="480" height="150" minSuggestedDuration="00:00:05" scalable="true" maintainAspectRatio="true">
+                            <StaticResource creativeType="image/png">
+                                <![CDATA[
+                                http://mms.businesswire.com/media/20150623005446/en/473787/21/iab_tech_lab.jpg
+                            ]]>
+                            </StaticResource>
+        					<NonLinearClickThrough>
+        						<![CDATA[http://iabtechlab.com]]>
+        					</NonLinearClickThrough>
+        					<NonLinearClickTracking>
+        						<![CDATA[http://myTrackingURL/clickTracking]]>
+        					</NonLinearClickTracking>
+        				</NonLinear>
 </NonLinearAds>
 </Creative>
 </Creatives>
