@@ -13,7 +13,7 @@
             <AdTitle>iabtechlab video ad</AdTitle>
 
             <Creatives>
-                <Creative id="5480" sequence="1" adId="2447226" apiFramework="VAST">
+                <Creative id="5480" sequence="1" adId="2447226">
                   <UniversalAdId idRegistry="Ad-ID" idValue="GUID">8465</UniversalAdId>
                     <Linear>
                         <TrackingEvents>

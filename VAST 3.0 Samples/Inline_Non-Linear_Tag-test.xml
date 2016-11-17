@@ -23,7 +23,7 @@
             </Pricing>
             
             <Creatives>
-                <Creative id="5480" sequence="1" adId="2447226" apiFramework="VAST">
+                <Creative id="5480" sequence="1" adId="2447226">
                     <NonLinearAds>
                         <NonLinear width="480" height="150" minSuggestedDuration="00:00:05" scalable="true" maintainAspectRatio="true">
                             <StaticResource creativeType="image/png">

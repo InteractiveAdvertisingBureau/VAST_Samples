@@ -13,7 +13,7 @@
             <AdTitle>iabtechlab video ad</AdTitle>
 
             <Creatives>
-                <Creative id="5480" sequence="1" adId="2447226" apiFramework="VAST">
+                <Creative id="5480" sequence="1" adId="2447226">
                     <Linear>
                         <TrackingEvents>
                            <Tracking event="start" offset="10:05:20">http://myTrackingURL/start</Tracking>
