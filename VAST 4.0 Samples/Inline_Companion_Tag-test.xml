@@ -16,10 +16,10 @@
             
             <Error>http://myErrorURL/error</Error>
             <Creatives>
-                <Creative id="5480" sequence="1" adId="2447226" apiFramework="VAST">
+                <Creative id="5480" sequence="1" adId="2447226">
                     <UniversalAdId idRegistry="Ad-ID" idValue="GUID">8465</UniversalAdId>
                      <CompanionAds>
-                        <Companion id="1232" width="100" height="150" assetWidth="250" assetHeight="200" expandedWidth="350" expandedHeight="250" apiFramework="VAST" adSlotID="3214" pxratio="1400">
+                        <Companion id="1232" width="100" height="150" assetWidth="250" assetHeight="200" expandedWidth="350" expandedHeight="250" adSlotID="3214" pxratio="1400">
                             <StaticResource creativeType="image/png">
                                 <![CDATA[https://www.iab.com/wp-content/uploads/2014/09/iab-tech-lab-6-644x290.png]]>
                                 </StaticResource>
@@ -29,7 +29,7 @@
                         </Companion>
                      </CompanionAds>
                 </Creative>
-                <Creative id="5480" sequence="1" adId="2447226" apiFramework="VAST">
+                <Creative id="5480" sequence="1" adId="2447226">
                     <Linear>
                         <TrackingEvents>
                            <Tracking event="start" offset="09:15:23">http://myTrackingURL/start</Tracking>
@@ -40,8 +40,8 @@
                         </TrackingEvents>
                         <Duration>00:00:16</Duration>
                         <MediaFiles>
-                            <MediaFile id="5241" delivery="progressive" type="video/x-flv" bitrate="500" width="400" height="300" minBitrate="360" maxBitrate="1080" scalable="1" maintainAspectRatio="1" codec="0" apiFramework="VAST">
-                                <![CDATA[http://cdnp.tremormedia.com/video/acudeo/Carrot_400x300_500kb.flv]]>
+                            <MediaFile id="5241" delivery="progressive" type="video/mp4" bitrate="500" width="400" height="300" minBitrate="360" maxBitrate="1080" scalable="1" maintainAspectRatio="1" codec="0">
+                                <![CDATA[https://iabtechlab.com/wp-content/uploads/2016/07/VAST-4.0-Short-Intro.mp4]]>
                             </MediaFile>
                         </MediaFiles>
                         

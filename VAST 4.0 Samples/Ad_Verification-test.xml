@@ -11,7 +11,7 @@
             <Error>http://myErrorURL/error</Error>
             <AdVerifications>
                 <Verification vendor="iab">
-                    <FlashResource apiFramework="VAST">
+                    <FlashResource>
                         http://demo.tremormedia.com/proddev/vast/300x250_linear_1.swf
                     </FlashResource>
                 </Verification>
@@ -19,7 +19,7 @@
             <AdTitle>iabtechlab video ad</AdTitle>
 
             <Creatives>
-                <Creative id="5480" sequence="1" adId="2447226" apiFramework="VAST">
+                <Creative id="5480" sequence="1" adId="2447226">
                   <UniversalAdId idRegistry="Ad-ID" idValue="GUID">8465</UniversalAdId>
                     <Linear>
                         <TrackingEvents>
@@ -31,8 +31,8 @@
                         </TrackingEvents>
                         <Duration>00:00:16</Duration>
                         <MediaFiles>
-                            <MediaFile id="5241" delivery="progressive" type="video/x-flv" bitrate="500" width="400" height="300" minBitrate="360" maxBitrate="1080" scalable="1" maintainAspectRatio="1" codec="0" apiFramework="VAST">
-                                <![CDATA[http://cdnp.tremormedia.com/video/acudeo/Carrot_400x300_500kb.flv]]>
+                            <MediaFile id="5241" delivery="progressive" type="video/mp4" bitrate="500" width="400" height="300" minBitrate="360" maxBitrate="1080" scalable="1" maintainAspectRatio="1" codec="0">
+                                <![CDATA[https://iabtechlab.com/wp-content/uploads/2016/07/VAST-4.0-Short-Intro.mp4]]>
                             </MediaFile>
                         </MediaFiles>
                         

@@ -1,0 +1,31 @@
+<VAST version="2.0">
+	<Ad id="preroll-1">
+		<InLine>
+		<AdSystem>2.0</AdSystem>
+		<AdTitle>5773100</AdTitle>
+		<Creatives>
+			<Creative>
+				<Linear>
+				<Duration>00:00:01</Duration>
+				<MediaFiles>
+					<MediaFile id="5241" delivery="progressive" type="video/mp4" bitrate="500" width="400" height="300" minBitrate="360" maxBitrate="1080" scalable="1" maintainAspectRatio="1" codec="0" apiFramework="VPAID">
+                                <![CDATA[https://iabtechlab.com/wp-content/uploads/2016/07/VAST-4.0-Short-Intro.mp4]]>
+                    </MediaFile>
+				</MediaFiles>
+				</Linear>
+			</Creative>
+			<Creative>
+				<CompanionAds>
+					<Companion height="250" width="300" id="573242">
+						<HTMLResource>
+						<![CDATA[
+						<A onClick="var i= new Image(1,1); i.src='http://app.scanscout.com/ssframework/log/log.png?a=logitemaction&RI=573242&CbC=1&CbF=true&EC=0&RC=0&SmC=2&CbM=1.0E-5&VI=44cfc3b2382300cb751ba129fe51f46a&admode=preroll&PRI=7496075541100999745&RprC=5&ADsn=20&VcaI=192,197&RrC=1&VgI=44cfc3b2382300cb751ba129fe51f46a&AVI=142&Ust=ma&Uctry=us&CI=1247549&AC=4&PI=567&Udma=506&ADI=5773100&VclF=true';" HREF="http://vaseline.com" target="_blank"> <IMG SRC="http://media.scanscout.com/ads/vaseline300x250Companion.jpg" BORDER=0 WIDTH=300 HEIGHT=250 ALT="Click Here"> </A> <img src="http://app.scanscout.com/ssframework/log/log.png?a=logitemaction&RI=573242&CbC=1&CbF=true&EC=1&RC=0&SmC=2&CbM=1.0E-5&VI=44cfc3b2382300cb751ba129fe51f46a&admode=preroll&PRI=7496075541100999745&RprC=5&ADsn=20&VcaI=192,197&RrC=1&VgI=44cfc3b2382300cb751ba129fe51f46a&AVI=142&Ust=ma&Uctry=us&CI=1247549&AC=4&PI=567&Udma=506&ADI=5773100&VclF=true" height="1" width="1">
+						]]>
+						</HTMLResource>
+					</Companion>
+				</CompanionAds>
+			</Creative>
+		</Creatives>
+		</InLine>
+	</Ad>
+</VAST>

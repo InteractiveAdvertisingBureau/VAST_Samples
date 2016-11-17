@@ -1,0 +1,15 @@
+<VideoAdServingTemplate>
+	<Ad id="overlay-1">
+		<InLine>
+			<AdSystem>iabtechlab</AdSystem>
+			<AdTitle>5700030</AdTitle>
+			<NonLinearAds>
+				<NonLinear width="480" resourceType="static" id="overlay-1" height="150" creativeType="image/png" >
+					<URL>
+					 <![CDATA[http://mms.businesswire.com/media/20150623005446/en/473787/21/iab_tech_lab.jpg]]>
+					</URL>
+				</NonLinear>
+			</NonLinearAds>
+		</InLine>
+	</Ad>
+</VideoAdServingTemplate>
