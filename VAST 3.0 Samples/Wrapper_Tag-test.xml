@@ -3,15 +3,18 @@
         <Wrapper followAdditionalWrappers="0" allowMultipleAds="1" fallbackOnNoAd="0">
             <AdSystem version="4.0">iabtechlab</AdSystem>
             <VASTAdTagURI><![CDATA[https://raw.githubusercontent.com/InteractiveAdvertisingBureau/VAST_UseCases/master/VAST%203.0%20Samples/Inline_Companion_Tag-test.xml]]></VASTAdTagURI>
-            <Description>
-                <![CDATA[A VAST wrapper is a VAST response that does not contain a VAST inline ad but instead contains information about a redirect to a third party ad server. This allows different parties to serve ad inventory from a secondary ad server. A VAST wrapper redirect can also point to another VAST wrapper, creating a chain of VAST wrappers that finally point to a VAST inline ad. This is sample Wrapper ad tag presented by IAB TechLab. Modify VASTAdTagURI and other information as required.]]>
-            </Description>
             <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
             <Error>http://myErrorURL/error</Error>
             <Creatives>
                 <Creative id="5480" sequence="1" adId="2447226">
                 <CompanionAds>
                     <Companion id="1232" width="100" height="150" assetWidth="250" assetHeight="200" expandedWidth="350" expandedHeight="250" adSlotID="3214" pxratio="1400" logoTile="abcd" logoArtist="mar" logoURL="http://sdfsd.sdf/logo.png">
+                        <StaticResource creativeType="image/png">
+                                <![CDATA[https://www.iab.com/wp-content/uploads/2014/09/iab-tech-lab-6-644x290.png]]>
+                        </StaticResource>
+                        <CompanionClickThrough>
+                            <![CDATA[https://iabtechlab.com]]>
+                        </CompanionClickThrough> 
                     </Companion>
                 </CompanionAds>
                 </Creative>
