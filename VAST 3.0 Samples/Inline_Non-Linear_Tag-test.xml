@@ -8,6 +8,9 @@
             <Description>
                 <![CDATA[VAST 3.0 sample tag for Non Linear ad (i.e Overlay ad). Change the StaticResources to have a tag with your own content. Change NonLinear tag's parameters accordingly to view desired results. ]]>
             </Description>
+            <Pricing model="cpm" currency="USD">
+                <![CDATA[ 25.00 ]]>
+            </Pricing>
             <Error>
             <![CDATA[
             http://myErrorURL/error
@@ -18,12 +21,9 @@
             http://myTrackingURL/impression
             ]]>
             </Impression>
-            <Pricing model="cpm" currency="USD">
-                <![CDATA[ 25.00 ]]>
-            </Pricing>
             
             <Creatives>
-                <Creative id="5480" sequence="1" adId="2447226">
+                <Creative id="5480" sequence="1" AdID="65656">
                     <NonLinearAds>
                         <NonLinear width="480" height="150" minSuggestedDuration="00:00:05" scalable="true" maintainAspectRatio="true">
                             <StaticResource creativeType="image/png">
@@ -31,12 +31,14 @@
                                 http://mms.businesswire.com/media/20150623005446/en/473787/21/iab_tech_lab.jpg
                             ]]>
                             </StaticResource>
+
+                            <NonLinearClickTracking>
+                                <![CDATA[http://myTrackingURL/clickTracking]]>
+                            </NonLinearClickTracking>
         					<NonLinearClickThrough>
         						<![CDATA[http://iabtechlab.com]]>
         					</NonLinearClickThrough>
-        					<NonLinearClickTracking>
-        						<![CDATA[http://myTrackingURL/clickTracking]]>
-        					</NonLinearClickTracking>
+        					
         				</NonLinear>
 			         </NonLinearAds>
                 </Creative>
