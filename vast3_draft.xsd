@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="VAST">
+    <xs:annotation>
+      <xs:documentation>IAB VAST, Video Ad Serving Template, video xml ad response, Version 3.0.0, xml schema prepared by Google</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Ad" maxOccurs="unbounded" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Top-level element, wraps each ad in the response</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:choice maxOccurs="1" minOccurs="1">
+              <xs:element name="InLine" maxOccurs="1" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>Second-level element surrounding complete ad data for a single ad</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="AdSystem" maxOccurs="1" minOccurs="1" type="AdSystem_type">
+                      <xs:annotation>
+                        <xs:documentation>Indicates source ad server</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="AdTitle" type="xs:string" maxOccurs="1" minOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>Common name of ad</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Description" type="xs:string" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>Longer description of ad</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Advertiser" type="xs:string" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>Common name of advertiser</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Pricing" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>The price of the ad.</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:decimal">
+                            <xs:attribute name="model" use="required">
+                              <xs:annotation>
+                                <xs:documentation>The pricing model used.</xs:documentation>
+                              </xs:annotation>
+                              <xs:simpleType>
+                                <xs:restriction base="xs:NMTOKEN">
+                                  <xs:enumeration value="cpc" />
+                                  <xs:enumeration value="cpm" />
+                                  <xs:enumeration value="cpe" />
+                                  <xs:enumeration value="cpv" />
+                                </xs:restriction>
+                              </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute name="currency" use="required">
+                              <xs:annotation>
+                                <xs:documentation>The currency of the pricing.</xs:documentation>
+                              </xs:annotation>
+                              <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                  <xs:pattern value="[a-zA-Z]{3}" />
+                                </xs:restriction>
+                              </xs:simpleType>
+                            </xs:attribute>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Survey" type="xs:anyURI" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>URL of request to survey vendor</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Error" type="xs:anyURI" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>URL to request if ad does not play due to error</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Impression" type="Impression_type" maxOccurs="unbounded" minOccurs="1" />
+                    <xs:element maxOccurs="1" minOccurs="1" name="Creatives">
+                      <xs:annotation>
+                        <xs:documentation>Contains all creative elements within an InLine or Wrapper Ad</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Creative" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation>Wraps each creative element within an InLine or Wrapper Ad</xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:choice>
+                                <xs:element name="Linear" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Icons" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Icon" minOccurs="1" maxOccurs="unbounded" type="Icon_type">
+                                              <xs:annotation>
+                                                <xs:documentation>Any number of icons representing advertising industry initiatives.</xs:documentation>
+                                              </xs:annotation>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="CreativeExtensions" minOccurs="0" maxOccurs="1" type="CreativeExtensions_type" />
+                                      <xs:element name="Duration" type="xs:time" maxOccurs="1" minOccurs="1">
+                                        <xs:annotation>
+                                          <xs:documentation>Duration in standard time format, hh:mm:ss</xs:documentation>
+                                        </xs:annotation>
+                                      </xs:element>
+                                      <xs:element name="TrackingEvents" minOccurs="0" type="TrackingEvents_type" maxOccurs="1" />
+                                      <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type">
+                                        <xs:annotation>
+                                          <xs:documentation>Data to be passed into the video ad</xs:documentation>
+                                        </xs:annotation>
+                                      </xs:element>
+                                      <xs:element name="VideoClicks" minOccurs="0" type="VideoClicks_type" maxOccurs="1" />
+                                      <xs:element name="MediaFiles" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="MediaFile" minOccurs="1" maxOccurs="unbounded">
+                                              <xs:annotation>
+                                                <xs:documentation>Location of linear file</xs:documentation>
+                                              </xs:annotation>
+                                              <xs:complexType>
+                                                <xs:simpleContent>
+                                                  <xs:extension base="xs:anyURI">
+                                                    <xs:attribute name="id" type="xs:string" use="optional">
+                                                      <xs:annotation>
+                                                        <xs:documentation>Optional identifier</xs:documentation>
+                                                      </xs:annotation>
+                                                    </xs:attribute>
+                                                    <xs:attribute name="delivery" use="required">
+                                                      <xs:annotation>
+                                                        <xs:documentation>Method of delivery of ad</xs:documentation>
+                                                      </xs:annotation>
+                                                      <xs:simpleType>
+                                                        <xs:restriction base="xs:NMTOKEN">
+                                                          <xs:enumeration value="streaming" />
+                                                          <xs:enumeration value="progressive" />
+                                                        </xs:restriction>
+                                                      </xs:simpleType>
+                                                    </xs:attribute>
+                                                    <xs:attribute name="type" use="required" type="xs:string">
+                                                      <xs:annotation>
+                                                        <xs:documentation>MIME type. Popular MIME types include, but are not limited to “video/x-ms-wmv” for Windows Media, and “video/x-flv” for Flash Video. Image ads or interactive ads can be included in the MediaFiles section with appropriate Mime
+                                                          types</xs:documentation>
+                                                      </xs:annotation>
+                                                    </xs:attribute>
+                                                    <xs:attribute name="bitrate" type="xs:integer" use="optional">
+                                                      <xs:annotation>
+                                                        <xs:documentation>Bitrate of encoded video in Kbps. If bitrate is supplied, minBitrate and maxBitrate should not be supplied.</xs:documentation>
+                                                      </xs:annotation>
+                                                    </xs:attribute>
+                                                    <xs:attribute name="minBitrate" type="xs:integer" use="optional">
+                                                      <xs:annotation>
+                                                        <xs:documentation>Minimum bitrate of an adaptive stream in Kbps. If minBitrate is supplied, maxBitrate must be supplied and bitrate should not be supplied.</xs:documentation>
+                                                      </xs:annotation>
+                                                    </xs:attribute>
+                                                    <xs:attribute name="maxBitrate" type="xs:integer" use="optional">
+                                                      <xs:annotation>
+                                                        <xs:documentation>Maximum bitrate of an adaptive stream in Kbps. If maxBitrate is supplied, minBitrate must be supplied and bitrate should not be supplied.</xs:documentation>
+                                                      </xs:annotation>
+                                                    </xs:attribute>
+                                                    <xs:attribute name="width" type="xs:integer" use="required">
+                                                      <xs:annotation>
+                                                        <xs:documentation>Pixel dimensions of video</xs:documentation>
+                                                      </xs:annotation>
+                                                    </xs:attribute>
+                                                    <xs:attribute name="height" type="xs:integer" use="required">
+                                                      <xs:annotation>
+                                                        <xs:documentation>Pixel dimensions of video</xs:documentation>
+                                                      </xs:annotation>
+                                                    </xs:attribute>
+                                                    <xs:attribute name="scalable" type="xs:boolean" use="optional">
+                                                      <xs:annotation>
+                                                        <xs:documentation>Whether it is acceptable to scale the image.</xs:documentation>
+                                                      </xs:annotation>
+                                                    </xs:attribute>
+                                                    <xs:attribute name="maintainAspectRatio" type="xs:boolean" use="optional">
+                                                      <xs:annotation>
+                                                        <xs:documentation>Whether the ad must have its aspect ratio maintained when scales</xs:documentation>
+                                                      </xs:annotation>
+                                                    </xs:attribute>
+                                                    <xs:attribute name="apiFramework" type="xs:string" use="optional">
+                                                      <xs:annotation>
+                                                        <xs:documentation>The apiFramework defines the method to use for communication if the MediaFile is interactive. Suggested values for this element are “VPAID”, “FlashVars” (for Flash/Flex), “initParams” (for Silverlight) and “GetVariables”
+                                                          (variables placed in key/value pairs on the asset request).</xs:documentation>
+                                                      </xs:annotation>
+                                                    </xs:attribute>
+                                                    <xs:attribute name="codec" use="optional" type="xs:string">
+                                                      <xs:annotation>
+                                                        <xs:documentation>The codec used to produce the media file.</xs:documentation>
+                                                      </xs:annotation>
+                                                    </xs:attribute>
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="skipoffset" use="optional">
+                                      <xs:annotation>
+                                        <xs:documentation>The time at which the ad becomes skippable, if absent, the ad is not skippable.</xs:documentation>
+                                      </xs:annotation>
+                                      <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                          <xs:pattern value="(\d{2}:[0-5]\d:[0-5]\d(\.\d\d\d)?|1?\d?\d(\.?\d)*%)" />
+                                        </xs:restriction>
+                                      </xs:simpleType>
+                                   </xs:attribute>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="CompanionAds" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Companion" minOccurs="0" maxOccurs="unbounded" type="Companion_type">
+                                        <xs:annotation>
+                                          <xs:documentation>Any number of companions in any desired pixel dimensions.</xs:documentation>
+                                        </xs:annotation>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="required" use="optional">
+                                      <xs:annotation>
+                                        <xs:documentation>Provides information about which companion creative to display. All means that the player must attempt to display all. Any means the player must attempt to play at least one. None means all companions are optional.</xs:documentation>
+                                      </xs:annotation>
+                                      <xs:simpleType>
+                                        <xs:restriction base="xs:NMTOKEN">
+                                          <xs:enumeration value="all" />
+                                          <xs:enumeration value="any" />
+                                          <xs:enumeration value="none" />
+                                        </xs:restriction>
+                                      </xs:simpleType>
+                                    </xs:attribute>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="NonLinearAds" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="TrackingEvents" minOccurs="0" type="TrackingEvents_type" maxOccurs="1" />
+                                      <xs:element name="NonLinear" minOccurs="1" maxOccurs="unbounded" type="NonLinear_type">
+                                        <xs:annotation>
+                                          <xs:documentation>Any number of companions in any desired pixel dimensions.</xs:documentation>
+                                        </xs:annotation>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:choice>
+                              <xs:attribute name="id" type="xs:string" use="optional" />
+                              <xs:attribute name="sequence" type="xs:integer" use="optional">
+                                <xs:annotation>
+                                  <xs:documentation>The preferred order in which multiple Creatives should be displayed</xs:documentation>
+                                </xs:annotation>
+                              </xs:attribute>
+                              <xs:attribute name="AdID" type="xs:string" use="optional">
+                                <xs:annotation>
+                                  <xs:documentation>Ad-ID for the creative (formerly ISCI)</xs:documentation>
+                                </xs:annotation>
+                              </xs:attribute>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Extensions" minOccurs="0" maxOccurs="1" type="Extensions_type" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Wrapper" maxOccurs="1" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>Second-level element surrounding wrapper ad pointing to Secondary ad server.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="AdSystem" type="AdSystem_type" maxOccurs="1" minOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>Indicates source ad server</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="VASTAdTagURI" type="xs:anyURI" maxOccurs="1" minOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>URL of ad tag of downstream Secondary Ad Server</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Error" type="xs:anyURI" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>URL to request if ad does not play due to error</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Impression" type="xs:anyURI" maxOccurs="unbounded" minOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>URL to request to track an impression</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Creatives">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Creative" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:choice>
+                                <xs:element name="Linear" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CreativeExtensions" minOccurs="0" maxOccurs="1" type="CreativeExtensions_type" />
+                                      <xs:element name="Icons" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Icon" minOccurs="1" maxOccurs="unbounded" type="Icon_type">
+                                              <xs:annotation>
+                                                <xs:documentation>Any number of icons representing advertising industry initiatives.</xs:documentation>
+                                              </xs:annotation>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="TrackingEvents" minOccurs="0" type="TrackingEvents_type" maxOccurs="1" />
+                                      <xs:element name="VideoClicks" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="ClickTracking" minOccurs="0" maxOccurs="unbounded">
+                                              <xs:annotation>
+                                                <xs:documentation>URL to request for tracking purposes when user clicks on the video</xs:documentation>
+                                              </xs:annotation>
+                                              <xs:complexType>
+                                                <xs:simpleContent>
+                                                  <xs:extension base="xs:anyURI">
+                                                    <xs:attribute name="id" type="xs:string" use="optional" />
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="CustomClick" minOccurs="0" maxOccurs="unbounded">
+                                              <xs:annotation>
+                                                <xs:documentation>URLs to request on custom events such as hotspotted video</xs:documentation>
+                                              </xs:annotation>
+                                              <xs:complexType>
+                                                <xs:simpleContent>
+                                                  <xs:extension base="xs:anyURI">
+                                                    <xs:attribute name="id" type="xs:string" use="optional" />
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="CompanionAds" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Companion" minOccurs="0" maxOccurs="unbounded" type="CompanionWrapper_type">
+                                        <xs:annotation>
+                                          <xs:documentation>Definition of Companion ad, if served separately</xs:documentation>
+                                        </xs:annotation>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="NonLinearAds" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="TrackingEvents" minOccurs="0" type="TrackingEvents_type" maxOccurs="1" />
+                                      <xs:element name="NonLinear" minOccurs="0" maxOccurs="unbounded" type="NonLinearWrapper_type">
+                                        <xs:annotation>
+                                          <xs:documentation>Any number of companions in any desired pixel dimensions.</xs:documentation>
+                                        </xs:annotation>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:choice>
+                              <xs:attribute name="id" type="xs:string" use="optional" />
+                              <xs:attribute name="sequence" type="xs:integer" use="optional">
+                                <xs:annotation>
+                                  <xs:documentation>The preferred order in which multiple Creatives should be displayed</xs:documentation>
+                                </xs:annotation>
+                              </xs:attribute>
+                              <xs:attribute name="AdID" type="xs:string" use="optional">
+                                <xs:annotation>
+                                  <xs:documentation>Ad-ID for the creative (formerly ISCI)</xs:documentation>
+                                </xs:annotation>
+                              </xs:attribute>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Extensions" minOccurs="0" maxOccurs="1" type="Extensions_type" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+            <xs:attribute name="id" type="xs:string" use="optional" />
+            <xs:attribute name="sequence" type="xs:integer" use="optional">
+              <xs:annotation>
+                <xs:documentation>Identifies the sequence of multiple Ads and defines an Ad Pod.</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string" use="required">
+        <xs:annotation>
+          <xs:documentation>Current version is 3.0.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="TrackingEvents_type">
+    <xs:sequence>
+      <xs:element name="Tracking" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>The name of the event to track for the element. The creativeView should always be requested when present.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:anyURI">
+              <xs:attribute name="event" use="required">
+                <xs:annotation>
+                  <xs:documentation>The name of the event to track. For nonlinear ads these events should be recorded on the video within the ad.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:NMTOKEN">
+                    <xs:enumeration value="creativeView" />
+                    <xs:enumeration value="start" />
+                    <xs:enumeration value="firstQuartile" />
+                    <xs:enumeration value="midpoint" />
+                    <xs:enumeration value="thirdQuartile" />
+                    <xs:enumeration value="complete" />
+                    <xs:enumeration value="mute" />
+                    <xs:enumeration value="unmute" />
+                    <xs:enumeration value="pause" />
+                    <xs:enumeration value="rewind" />
+                    <xs:enumeration value="resume" />
+                    <xs:enumeration value="fullscreen" />
+                    <xs:enumeration value="exitFullscreen" />
+                    <xs:enumeration value="expand" />
+                    <xs:enumeration value="collapse" />
+                    <xs:enumeration value="acceptInvitation" />
+                    <xs:enumeration value="close" />
+                    <xs:enumeration value="skip" />
+                    <xs:enumeration value="progress" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:attribute>
+              <xs:attribute name="offset" use="optional">
+                <xs:annotation>
+                  <xs:documentation>The time during the video at which this url should be pinged. Must be present for progress event.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="(\d{2}:[0-5]\d:[0-5]\d(\.\d\d\d)?|1?\d?\d(\.?\d)*%)" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:attribute>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VideoClicks_type">
+    <xs:sequence>
+      <xs:element name="ClickThrough" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>URL to open as destination page when user clicks on the video</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:anyURI">
+              <xs:attribute name="id" type="xs:string" use="optional" />
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ClickTracking" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>URL to request for tracking purposes when user clicks on the video</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:anyURI">
+              <xs:attribute name="id" type="xs:string" use="optional" />
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CustomClick" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>URLs to request on custom events such as hotspotted video</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:anyURI">
+              <xs:attribute name="id" type="xs:string" use="optional" />
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Companion_type">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element name="StaticResource" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>URL to a static file, such as an image or SWF file</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:anyURI">
+                <xs:attribute name="creativeType" type="xs:string" use="required">
+                  <xs:annotation>
+                    <xs:documentation>Mime type of static resource</xs:documentation>
+                  </xs:annotation>
+                </xs:attribute>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IFrameResource" type="xs:anyURI" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>URL source for an IFrame to display the companion element</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="HTMLResource" type="HTMLResource_type" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>HTML to display the companion element</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:choice>
+      <xs:element name="CreativeExtensions" minOccurs="0" maxOccurs="1" type="CreativeExtensions_type" />
+      <xs:element maxOccurs="1" minOccurs="0" name="TrackingEvents" type="TrackingEvents_type">
+        <xs:annotation>
+          <xs:documentation>The creativeView should always be requested when present. For Companions creativeView is the only supported event.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CompanionClickThrough" type="xs:anyURI" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>URL to open as destination page when user clicks on the the companion banner ad.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="AltText" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Alt text to be displayed when companion is rendered in HTML environment.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type">
+        <xs:annotation>
+          <xs:documentation>Data to be passed into the companion ads. The apiFramework defines the method to use for communication (e.g. “FlashVar”)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation>Optional identifier</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="width" type="xs:integer" use="required">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of companion slot</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="height" type="xs:integer" use="required">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of companion slot</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="assetWidth" type="xs:integer" use="optional">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of the companion asset</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="assetHeight" type="xs:integer" use="optional">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of the companion asset</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="expandedWidth" type="xs:integer" use="optional">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of expanding companion ad when in expanded state</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="expandedHeight" type="xs:integer" use="optional">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of expanding companion ad when in expanded state</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="apiFramework" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation>The apiFramework defines the method to use for communication with the companion</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="adSlotId" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation>Used to match companion creative to publisher placement areas on the page.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="CompanionWrapper_type">
+    <xs:sequence>
+      <xs:choice minOccurs="0">
+        <xs:element name="StaticResource" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>URL to a static file, such as an image or SWF file</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:anyURI">
+                <xs:attribute name="creativeType" type="xs:string" use="required">
+                  <xs:annotation>
+                    <xs:documentation>Mime type of static resource</xs:documentation>
+                  </xs:annotation>
+                </xs:attribute>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IFrameResource" type="xs:anyURI" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>URL source for an IFrame to display the companion element</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="HTMLResource" type="HTMLResource_type" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>HTML to display the companion element</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:choice>
+      <xs:element name="CreativeExtensions" minOccurs="0" maxOccurs="1" type="CreativeExtensions_type" />
+      <xs:element maxOccurs="1" minOccurs="0" name="TrackingEvents" type="TrackingEvents_type">
+        <xs:annotation>
+          <xs:documentation>The creativeView should always be requested when present. For Companions creativeView is the only supported event.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CompanionClickThrough" type="xs:anyURI" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>URL to open as destination page when user clicks on the the companion banner ad.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CompanionClickTracking" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>URLs to ping when user clicks on the the companion banner ad.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="AltText" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Alt text to be displayed when companion is rendered in HTML environment.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type">
+        <xs:annotation>
+          <xs:documentation>Data to be passed into the companion ads. The apiFramework defines the method to use for communication (e.g. “FlashVar”)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation>Optional identifier</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="width" type="xs:integer" use="required">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of companion slot</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="height" type="xs:integer" use="required">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of companion slot</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="assetWidth" type="xs:integer" use="optional">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of the companion asset</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="assetHeight" type="xs:integer" use="optional">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of the companion asset</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="expandedWidth" type="xs:integer" use="optional">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of expanding companion ad when in expanded state</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="expandedHeight" type="xs:integer" use="optional">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of expanding companion ad when in expanded state</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="apiFramework" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation>The apiFramework defines the method to use for communication with the companion</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="adSlotId" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation>Used to match companion creative to publisher placement areas on the page.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="NonLinear_type">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element name="StaticResource" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>URL to a static file, such as an image or SWF file</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:anyURI">
+                <xs:attribute name="creativeType" type="xs:string" use="required">
+                  <xs:annotation>
+                    <xs:documentation>Mime type of static resource</xs:documentation>
+                  </xs:annotation>
+                </xs:attribute>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IFrameResource" type="xs:anyURI" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>URL source for an IFrame to display the companion element</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="HTMLResource" type="HTMLResource_type" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>HTML to display the companion element</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:choice>
+      <xs:element name="CreativeExtensions" minOccurs="0" maxOccurs="1" type="CreativeExtensions_type" />
+      <xs:element name="NonLinearClickTracking" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>URLs to ping when user clicks on the the non-linear ad.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="NonLinearClickThrough" type="xs:anyURI" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>URL to open as destination page when user clicks on the non-linear ad unit.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="AdParameters" minOccurs="0" maxOccurs="1" type="AdParameters_type">
+        <xs:annotation>
+          <xs:documentation>Data to be passed into the video ad. </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation>Optional identifier</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="width" type="xs:integer" use="required">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of companion</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="height" type="xs:integer" use="required">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of companion</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="expandedWidth" type="xs:integer" use="optional">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of expanding nonlinear ad when in expanded state</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="expandedHeight" type="xs:integer" use="optional">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of expanding nonlinear ad when in expanded state</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="scalable" type="xs:boolean" use="optional">
+      <xs:annotation>
+        <xs:documentation>Whether it is acceptable to scale the image.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="maintainAspectRatio" type="xs:boolean" use="optional">
+      <xs:annotation>
+        <xs:documentation>Whether the ad must have its aspect ratio maintained when scales</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="minSuggestedDuration" type="xs:time" use="optional">
+      <xs:annotation>
+        <xs:documentation>Suggested duration to display non-linear ad, typically for animation to complete. Expressed in standard time format hh:mm:ss</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="apiFramework" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation>The apiFramework defines the method to use for communication with the nonlinear element</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="NonLinearWrapper_type">
+    <xs:sequence>
+      <xs:element name="CreativeExtensions" minOccurs="0" maxOccurs="1" type="CreativeExtensions_type" />
+      <xs:element name="NonLinearClickTracking" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>URLs to ping when user clicks on the the non-linear ad unit.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation>Optional identifier</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="width" type="xs:integer" use="optional">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of companion</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="height" type="xs:integer" use="optional">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of companion</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="expandedWidth" type="xs:integer" use="optional">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of expanding nonlinear ad when in expanded state</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="expandedHeight" type="xs:integer" use="optional">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of expanding nonlinear ad when in expanded state</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="scalable" type="xs:boolean" use="optional">
+      <xs:annotation>
+        <xs:documentation>Whether it is acceptable to scale the image.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="maintainAspectRatio" type="xs:boolean" use="optional">
+      <xs:annotation>
+        <xs:documentation>Whether the ad must have its aspect ratio maintained when scales</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="minSuggestedDuration" type="xs:time" use="optional">
+      <xs:annotation>
+        <xs:documentation>Suggested duration to display non-linear ad, typically for animation to complete. Expressed in standard time format hh:mm:ss</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="apiFramework" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation>The apiFramework defines the method to use for communication with the nonlinear element</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="AdSystem_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="version" type="xs:string" use="optional">
+          <xs:annotation>
+            <xs:documentation>Internal version used by ad system</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="Impression_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:anyURI">
+        <xs:attribute name="id" type="xs:string" use="optional" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="Icon_type">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element name="StaticResource" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>URL to a static file, such as an image or SWF file</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:anyURI">
+                <xs:attribute name="creativeType" type="xs:string" use="required">
+                  <xs:annotation>
+                    <xs:documentation>Mime type of static resource</xs:documentation>
+                  </xs:annotation>
+                </xs:attribute>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IFrameResource" type="xs:anyURI" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>URL source for an IFrame to display the companion element</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="HTMLResource" type="HTMLResource_type" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>HTML to display the companion element</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:choice>
+      <xs:element name="IconClicks" minOccurs="0" maxOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="IconClickTracking" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:documentation>URLs to ping when user clicks on the the icon.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="IconClickThrough" type="xs:anyURI" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:documentation>URL to open as destination page when user clicks on the icon.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="IconViewTracking" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>URLs to ping when icon is shown.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="program" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>Identifies the industry initiative that the icon supports.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="width" type="xs:integer" use="required">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of icon.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="height" type="xs:integer" use="required">
+      <xs:annotation>
+        <xs:documentation>Pixel dimensions of icon.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="xPosition" use="required">
+      <xs:annotation>
+        <xs:documentation>The horizontal alignment location (in pixels) or a specific alignment.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value='([0-9]*|left|right)' />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="yPosition" use="required">
+      <xs:annotation>
+        <xs:documentation>The vertical alignment location (in pixels) or a specific alignment.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value='([0-9]*|top|bottom)' />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="offset" type="xs:time" use="optional">
+      <xs:annotation>
+        <xs:documentation>Start time at which the player should display the icon. Expressed in standard time format hh:mm:ss.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="duration" type="xs:time" use="optional">
+      <xs:annotation>
+        <xs:documentation>The duration for which the player must display the icon. Expressed in standard time format hh:mm:ss.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="apiFramework" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation>The apiFramework defines the method to use for communication with the icon element</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name ="Extensions_type">
+    <xs:sequence>
+      <xs:element name="Extension" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>Any valid XML may be included in the Extensions node</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##any" />
+          </xs:sequence>
+          <xs:anyAttribute namespace="##any" processContents="lax" />
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name ="CreativeExtensions_type">
+    <xs:sequence>
+      <xs:element name="CreativeExtension" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>Any valid XML may be included in the Extensions node</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##any" />
+          </xs:sequence>
+          <xs:anyAttribute namespace="##any" processContents="lax" />
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AdParameters_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="xmlEncoded" type="xs:boolean" use="optional">
+          <xs:annotation>
+            <xs:documentation>Specifies whether the parameters are XML-encoded</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="HTMLResource_type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="xmlEncoded" type="xs:boolean" use="optional">
+          <xs:annotation>
+            <xs:documentation>Specifies whether the HTML is XML-encoded</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>
