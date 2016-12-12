@@ -1,12 +1,14 @@
 <VAST version="2.0">
-<Ad id="overlay-1">
-<InLine>
-<AdSystem>2.0</AdSystem>
-<AdTitle>5750100</AdTitle>
-<Creatives>
-<Creative>
-<NonLinearAds>
-<NonLinear width="480" height="150" minSuggestedDuration="00:00:05" scalable="true" maintainAspectRatio="true">
+    <Ad id="overlay-1">
+        <InLine>
+            <AdSystem>2.0</AdSystem>
+            <AdTitle>5750100</AdTitle>
+            <Error>myErrorUrl.com</Error>
+            <Impression>myImpressionUrl.com</Impression>
+            <Creatives>
+                <Creative>
+                    <NonLinearAds>
+                        <NonLinear width="480" height="150" minSuggestedDuration="00:00:05" scalable="true" maintainAspectRatio="true">
                             <StaticResource creativeType="image/png">
                                 <![CDATA[
                                 http://mms.businesswire.com/media/20150623005446/en/473787/21/iab_tech_lab.jpg
@@ -15,11 +17,11 @@
         					<NonLinearClickThrough>
         						<![CDATA[http://iabtechlab.com]]>
         					</NonLinearClickThrough>
-        					
-        				</NonLinear>
-</NonLinearAds>
-</Creative>
-</Creatives>
-</InLine>
-</Ad>
+                            					
+                        </NonLinear>
+                    </NonLinearAds>
+                </Creative>
+            </Creatives>
+        </InLine>
+    </Ad>
 </VAST>
