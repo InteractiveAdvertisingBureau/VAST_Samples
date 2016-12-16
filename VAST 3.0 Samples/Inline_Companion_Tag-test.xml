@@ -18,7 +18,7 @@
             <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
             
             <Creatives>
-                <Creative id="5480" sequence="1" AdID="5665">
+                <Creative id="5480" sequence="1" adId="5665">
                     <CompanionAds>
                         <Companion id="1232" width="300" height="250" assetWidth="250" assetHeight="200" expandedWidth="350" expandedHeight="250">
                                <StaticResource creativeType="image/png">

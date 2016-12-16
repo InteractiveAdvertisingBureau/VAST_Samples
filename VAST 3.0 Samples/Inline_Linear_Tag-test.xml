@@ -13,7 +13,7 @@
             <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
            
             <Creatives>
-                <Creative id="5480" sequence="1" AdID="565">
+                <Creative id="5480" sequence="1" adId="565">
                     <Linear>
                         <Duration>00:00:16</Duration>
                         <TrackingEvents>
