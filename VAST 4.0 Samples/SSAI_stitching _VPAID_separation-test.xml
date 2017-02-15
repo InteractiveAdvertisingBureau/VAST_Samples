@@ -1,5 +1,5 @@
 <VAST version="4.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <Ad id="20001" sequence="1" conditionalAd="true">
+    <Ad id="20001" sequence="1" conditionalAd="false">
         <InLine>
             <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
 
@@ -9,7 +9,7 @@
                 <![CDATA[ 25.00 ]]>
             </Pricing>
             <Error>http://myErrorURL/error</Error>
-            
+
             <AdTitle>iabtechlab video ad</AdTitle>
 
             <Creatives>
@@ -33,7 +33,7 @@
                                 <![CDATA[http://pilot.iabtechlab.com/beacon?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235]]>
                             </InteractiveCreativeFile>
                         </MediaFiles>
-                        
+
                         <VideoClicks>
                             <ClickThrough id="blog">
                                 <![CDATA[https://iabtechlab.com]]>
