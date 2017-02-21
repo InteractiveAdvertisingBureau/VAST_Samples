@@ -19,10 +19,8 @@
 					</ClickThrough>
 					</VideoClicks>
 					<MediaFiles>
-						<MediaFile height="396" width="600" bitrate="496" type="video/x-flv" delivery="progressive">
-						<![CDATA[
-						http://media.scanscout.com/ads/partner1_a1d1fbbc-c4d4-419f-b6c8-e9db63fd4491.flv
-						]]>
+						<MediaFile height="396" width="600" bitrate="496" type="video/mp4" delivery="progressive">
+							<![CDATA[https://iabtechlab.com/wp-content/uploads/2016/07/VAST-4.0-Short-Intro.mp4]]>
 						</MediaFile>
 					</MediaFiles>
 				</Linear>
