@@ -10,12 +10,18 @@
             </Pricing>
             <Error>http://myErrorURL/error</Error>
             <AdVerifications>
-                <Verification vendor="iab">
-                    <FlashResource>
-                        http://demo.tremormedia.com/proddev/vast/300x250_linear_1.swf
-                    </FlashResource>
-                </Verification>
+                 <Verification>
+                       <JavaScriptResource>
+                         <![CDATA[https://verificationcompany1.com/verification_script1.js]]>
+                       </JavaScriptResource>
+                 </Verification>
+                 <Verification>
+                       <JavaScriptResource>
+                         <![CDATA[https://verificationcompany.com/untrusted.js]]>
+                       </JavaScriptResource>
+                 </Verification>
             </AdVerifications>
+
             <AdTitle>iabtechlab video ad</AdTitle>
 
             <Creatives>
