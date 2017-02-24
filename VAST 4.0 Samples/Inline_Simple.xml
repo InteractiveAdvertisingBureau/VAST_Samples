@@ -1,30 +1,26 @@
-<VAST version="4.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.iab.com/VAST">
+<VAST version="4.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"  xmlns="http://www.iab.com/VAST">
     <Ad id="20001" sequence="1" conditionalAd="false">
         <InLine>
-
             <AdSystem version="4.0">iabtechlab</AdSystem>
 
             <Error>http://myErrorURL/error</Error>
-            <Extensions>
-                <Extension type="iab-Count">
-                    <total_available>
-                        <![CDATA[ 2 ]]>
-                    </total_available>
-                </Extension>
-            </Extensions>
+
             <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
+			
             <Pricing model="cpm" currency="USD">
                 <![CDATA[ 25.00 ]]>
             </Pricing>
 
-            <AdTitle>iabtechlab video ad</AdTitle>
-
+            <AdTitle>Inline Simple Ad</AdTitle>
+			<AdVerifications></AdVerifications>
+			<Advertiser>IAB Sample Company</Advertiser>
+			<Category />
             <Creatives>
                 <Creative id="5480" sequence="1" adId="2447226">
                   <UniversalAdId idRegistry="Ad-ID" idValue="GUID">8465</UniversalAdId>
                     <Linear>
                         <TrackingEvents>
-                           <Tracking event="start" offset="10:05:20">http://myTrackingURL/start</Tracking>
+                           <Tracking event="start" offset="09:15:23">http://myTrackingURL/start</Tracking>
                             <Tracking event="firstQuartile">http://myTrackingURL/firstQuartile</Tracking>
                             <Tracking event="midpoint">http://myTrackingURL/midpoint</Tracking>
                             <Tracking event="thirdQuartile">http://myTrackingURL/thirdQuartile</Tracking>
@@ -51,6 +47,7 @@
                     </Linear>
                 </Creative>
             </Creatives>
+
         </InLine>
     </Ad>
 </VAST>

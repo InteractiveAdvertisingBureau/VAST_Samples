@@ -3,18 +3,22 @@
         <InLine>
             <AdSystem version="4.0">iabtechlab</AdSystem>
 
-            <AdTitle>
-                <![CDATA[VAST 4.0 Pilot - Scenario 5]]>
-            </AdTitle>
+            <Error>http://myErrorURL/error</Error>
+            <Extensions>
+                <Extension type="iab-Count">
+                    <total_available>
+                        <![CDATA[ 2 ]]>
+                    </total_available>
+                </Extension>
+            </Extensions>
             <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
-            <Description>
-                <![CDATA[This is sample companion ad tag with Linear ad tag. This tag while showing video ad on the player, will show a companion ad beside the player where it can be fitted. At most 3 companion ads can be placed. Modify accordingly to see your own content. ]]>
-            </Description>
             <Pricing model="cpm" currency="USD">
                 <![CDATA[ 25.00 ]]>
             </Pricing>
 
-            <Error>http://myErrorURL/error</Error>
+            <AdTitle>
+                <![CDATA[VAST 4.0 Pilot - Scenario 5]]>
+            </AdTitle>
             <Creatives>
                 <Creative id="5480" sequence="1" adId="2447226">
                     <UniversalAdId idRegistry="Ad-ID" idValue="GUID">8465</UniversalAdId>
@@ -60,13 +64,9 @@
                 </Creative>
 
             </Creatives>
-            <Extensions>
-                <Extension type="iab-Count">
-                    <total_available>
-                        <![CDATA[ 2 ]]>
-                    </total_available>
-                </Extension>
-            </Extensions>
+            <Description>
+                <![CDATA[This is sample companion ad tag with Linear ad tag. This tag while showing video ad on the player, will show a companion ad beside the player where it can be fitted. At most 3 companion ads can be placed. Modify accordingly to see your own content. ]]>
+            </Description>
         </InLine>
     </Ad>
 </VAST>
