@@ -20,8 +20,7 @@
                 <![CDATA[VAST 4.0 Pilot - Scenario 5]]>
             </AdTitle>
             <Creatives>
-                <Creative id="5480" sequence="1" adId="2447226">
-                    <UniversalAdId idRegistry="Ad-ID" idValue="GUID">8465</UniversalAdId>
+                <Creative id="5480" sequence="1" adId="2447226" >
                      <CompanionAds>
                         <Companion id="1232" width="100" height="150" assetWidth="250" assetHeight="200" expandedWidth="350" expandedHeight="250" adSlotID="3214" pxratio="1400">
                             <StaticResource creativeType="image/png">
@@ -32,6 +31,7 @@
                                 </CompanionClickThrough>
                         </Companion>
                      </CompanionAds>
+                    <UniversalAdId idRegistry="Ad-ID" idValue="GUID">8465</UniversalAdId>
                 </Creative>
                 <Creative id="5480" sequence="1" adId="2447226">
                     <Linear>
