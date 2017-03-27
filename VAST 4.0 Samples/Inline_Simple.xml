@@ -6,7 +6,7 @@
             <Error>http://myErrorURL/error</Error>
 
             <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
-			
+
             <Pricing model="cpm" currency="USD">
                 <![CDATA[ 25.00 ]]>
             </Pricing>
@@ -17,7 +17,7 @@
 			<Category />
             <Creatives>
                 <Creative id="5480" sequence="1" adId="2447226">
-                  <UniversalAdId idRegistry="Ad-ID" idValue="GUID">8465</UniversalAdId>
+                  <UniversalAdId idRegistry="Ad-ID" idValue="8465">8465</UniversalAdId>
                     <Linear>
                         <TrackingEvents>
                            <Tracking event="start" offset="09:15:23">http://myTrackingURL/start</Tracking>

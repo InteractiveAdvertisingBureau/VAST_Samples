@@ -12,7 +12,7 @@
 
             <Creatives>
                 <Creative id="5480" sequence="1" adId="2447226">
-                  <UniversalAdId idRegistry="Ad-ID" idValue="GUID">8465</UniversalAdId>
+                  <UniversalAdId idRegistry="Ad-ID" idValue="8465">8465</UniversalAdId>
                     <Linear>
                         <TrackingEvents>
                            <Tracking event="start" offset="08:34:01">http://myTrackingURL/start</Tracking>
