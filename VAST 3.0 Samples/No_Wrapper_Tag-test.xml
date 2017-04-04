@@ -9,9 +9,9 @@
             </Pricing>
             <Error>http://myErrorURL/error</Error>
             <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
-            
+
             <Creatives>
-                <Creative id="5480" sequence="1" adId="2447226">
+                <Creative id="5480" sequence="1">
                     <Linear>
                         <Duration>00:00:16</Duration>
                         <TrackingEvents>
@@ -21,7 +21,7 @@
                             <Tracking event="thirdQuartile">http://myTrackingURL/thirdQuartile</Tracking>
                             <Tracking event="complete">http://myTrackingURL/complete</Tracking>
                         </TrackingEvents>
-                        
+
                         <VideoClicks>
                             <ClickThrough id="blog">
                                <![CDATA[https://iabtechlab.com]]>
@@ -33,7 +33,7 @@
                                 <![CDATA[https://iabtechlab.com/wp-content/uploads/2016/07/VAST-4.0-Short-Intro.mp4]]>
                             </MediaFile>
                         </MediaFiles>
-                        
+
                     </Linear>
                 </Creative>
             </Creatives>
