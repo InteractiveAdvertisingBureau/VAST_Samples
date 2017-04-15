@@ -2,27 +2,31 @@
     <Ad id="20005" sequence="1" conditionalAd="false">
         <InLine>
             <AdSystem version="4.0">iabtechlab</AdSystem>
-
-            <AdTitle>
-                <![CDATA[VAST 4.0 Pilot - Scenario 5]]>
-            </AdTitle>
-            <Impression id="Impression-ID">
-            <![CDATA[
-            http://myTrackingURL/impression
-            ]]>
-            </Impression>
-            <Description>
-                <![CDATA[VAST 4.0 sample tag for Non Linear ad (i.e Overlay ad). Change the StaticResources to have a tag with your own content. Change NonLinear tag's parameters accordingly to view desired results.]]>
-            </Description>
-            <Pricing model="cpm" currency="USD">
-                <![CDATA[ 25.00 ]]>
-            </Pricing>
-
             <Error>
             <![CDATA[
             http://myErrorURL/error
             ]]>
             </Error>
+            <Extensions>
+                <Extension type="iab-Count">
+                    <total_available>
+                        <![CDATA[ 2 ]]>
+                    </total_available>
+                </Extension>
+            </Extensions>
+            <Impression id="Impression-ID">
+            <![CDATA[
+            http://myTrackingURL/impression
+            ]]>
+            </Impression>
+            <Pricing model="cpm" currency="USD">
+                <![CDATA[ 25.00 ]]>
+            </Pricing>
+
+            <AdTitle>
+                <![CDATA[VAST 4.0 Pilot - Scenario 5]]>
+            </AdTitle>
+
             <Creatives>
                 <Creative id="5480" sequence="1" adId="2447226">
                     <UniversalAdId idRegistry="Ad-ID" idValue="8465">8465</UniversalAdId>
@@ -43,13 +47,9 @@
                     </NonLinearAds>
                 </Creative>
             </Creatives>
-            <Extensions>
-                <Extension type="iab-Count">
-                    <total_available>
-                        <![CDATA[ 2 ]]>
-                    </total_available>
-                </Extension>
-            </Extensions>
+            <Description>
+                <![CDATA[VAST 4.0 sample tag for Non Linear ad (i.e Overlay ad). Change the StaticResources to have a tag with your own content. Change NonLinear tag's parameters accordingly to view desired results.]]>
+            </Description>
         </InLine>
     </Ad>
 </VAST>
