@@ -1,0 +1,192 @@
+<VAST version="2.0">
+  <Ad id="overlay-1">
+    <InLine>
+      <AdSystem>2.0</AdSystem>
+      <AdTitle>5750100</AdTitle>
+      <Creatives>
+        <Creative>
+          <NonLinearAds>
+            <NonLinear apiFramework="VPAID" height="60" width="380" id="overlay-1">
+              <StaticResource creativeType="application/x-shockwave-flash">
+              <![CDATA[
+              http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D0
+              ]]>
+              </StaticResource>
+            </NonLinear>
+          </NonLinearAds>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+  <Ad id="overlay-2">
+    <InLine>
+      <AdSystem>2.0</AdSystem>
+      <AdTitle>5750092</AdTitle>
+      <Creatives>
+        <Creative>
+          <NonLinearAds>
+            <NonLinear apiFramework="VPAID" height="60" width="380" id="overlay-2">
+              <StaticResource creativeType="application/x-shockwave-flash">
+              <![CDATA[
+              http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D1
+              ]]>
+              </StaticResource>
+            </NonLinear>
+          </NonLinearAds>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+  <Ad id="overlay-3">
+    <InLine>
+      <AdSystem>2.0</AdSystem>
+      <AdTitle>5750094</AdTitle>
+      <Creatives>
+        <Creative>
+          <NonLinearAds>
+            <NonLinear apiFramework="VPAID" height="60" width="380" id="overlay-3">
+              <StaticResource creativeType="application/x-shockwave-flash">
+              <![CDATA[
+              http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D2
+              ]]>
+              </StaticResource>
+            </NonLinear>
+          </NonLinearAds>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+  <Ad id="overlay-4">
+    <InLine>
+      <AdSystem>2.0</AdSystem>
+      <AdTitle>5750091</AdTitle>
+      <Creatives>
+        <Creative>
+          <NonLinearAds>
+            <NonLinear apiFramework="VPAID" height="60" width="380" id="overlay-4">
+              <StaticResource creativeType="application/x-shockwave-flash">
+              <![CDATA[
+              http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D3
+              ]]>
+              </StaticResource>
+            </NonLinear>
+          </NonLinearAds>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+  <Ad id="overlay-5">
+    <InLine>
+      <AdSystem>2.0</AdSystem>
+      <AdTitle>5748118</AdTitle>
+      <Creatives>
+        <Creative>
+          <NonLinearAds>
+            <NonLinear apiFramework="VPAID" height="60" width="380" id="overlay-5">
+              <StaticResource creativeType="application/x-shockwave-flash">
+              <![CDATA[
+              http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D4
+              ]]>
+              </StaticResource>
+            </NonLinear>
+          </NonLinearAds>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+  <Ad id="overlay-6">
+    <InLine>
+      <AdSystem>2.0</AdSystem>
+      <AdTitle>5750088</AdTitle>
+      <Creatives>
+        <Creative>
+          <NonLinearAds>
+            <NonLinear apiFramework="VPAID" height="60" width="380" id="overlay-6">
+              <StaticResource creativeType="application/x-shockwave-flash">
+              <![CDATA[
+              http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D5
+              ]]>
+              </StaticResource>
+            </NonLinear>
+          </NonLinearAds>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+  <Ad id="overlay-7">
+    <InLine>
+      <AdSystem>2.0</AdSystem>
+      <AdTitle>5700028</AdTitle>
+      <Creatives>
+        <Creative>
+          <NonLinearAds>
+            <NonLinear apiFramework="VPAID" height="60" width="380" id="overlay-7">
+              <StaticResource creativeType="application/x-shockwave-flash">
+              <![CDATA[
+              http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D6
+              ]]>
+              </StaticResource>
+            </NonLinear>
+          </NonLinearAds>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+  <Ad id="overlay-8">
+    <InLine>
+      <AdSystem>2.0</AdSystem>
+      <AdTitle>5750098</AdTitle>
+      <Creatives>
+        <Creative>
+          <NonLinearAds>
+            <NonLinear apiFramework="VPAID" height="60" width="380" id="overlay-8">
+              <StaticResource creativeType="application/x-shockwave-flash">
+              <![CDATA[
+              http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D7
+              ]]>
+              </StaticResource>
+            </NonLinear>
+          </NonLinearAds>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+  <Ad id="overlay-9">
+    <InLine>
+      <AdSystem>2.0</AdSystem>
+      <AdTitle>5750097</AdTitle>
+      <Creatives>
+        <Creative>
+          <NonLinearAds>
+            <NonLinear apiFramework="VPAID" height="60" width="380" id="overlay-9">
+              <StaticResource creativeType="application/x-shockwave-flash">
+              <![CDATA[
+              http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D8
+              ]]>
+              </StaticResource>
+            </NonLinear>
+          </NonLinearAds>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+  <Ad id="overlay-10">
+    <InLine>
+      <AdSystem>2.0</AdSystem>
+      <AdTitle>5700030</AdTitle>
+      <Creatives>
+        <Creative>
+          <NonLinearAds>
+            <NonLinear apiFramework="VPAID" height="60" width="380" id="overlay-10">
+              <StaticResource creativeType="application/x-shockwave-flash">
+              <![CDATA[
+              http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3D3%26HI%3D567|overlay|372934318%26AI%3D9
+              ]]>
+              </StaticResource>
+            </NonLinear>
+          </NonLinearAds>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>

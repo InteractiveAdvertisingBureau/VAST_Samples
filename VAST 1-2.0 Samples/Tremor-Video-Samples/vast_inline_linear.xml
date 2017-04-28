@@ -1,0 +1,54 @@
+<VAST version="2.0">
+  <Ad id="601364">
+    <InLine>
+      <AdSystem>Acudeo Compatible</AdSystem>
+      <AdTitle>VAST 2.0 Instream Test 1</AdTitle>
+      <Description>VAST 2.0 Instream Test 1</Description>
+      <Error>http://myErrorURL/error</Error>
+      <Impression>http://myTrackingURL/impression</Impression>
+      <Creatives>
+        <Creative AdID="601364">
+          <Linear>
+            <Duration>00:00:30</Duration>
+            <TrackingEvents>
+              <Tracking event="creativeView">http://myTrackingURL/creativeView</Tracking>
+              <Tracking event="start">http://myTrackingURL/start</Tracking>
+              <Tracking event="midpoint">http://myTrackingURL/midpoint</Tracking>
+              <Tracking event="firstQuartile">http://myTrackingURL/firstQuartile</Tracking>
+              <Tracking event="thirdQuartile">http://myTrackingURL/thirdQuartile</Tracking>
+              <Tracking event="complete">http://myTrackingURL/complete</Tracking>
+            </TrackingEvents>
+            <VideoClicks>
+              <ClickThrough>http://www.tremormedia.com</ClickThrough>
+              <ClickTracking>http://myTrackingURL/click</ClickTracking>
+            </VideoClicks>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/x-flv" bitrate="500" width="400" height="300" scalable="true" maintainAspectRatio="true">
+              http://cdnp.tremormedia.com/video/acudeo/Carrot_400x300_500kb.flv
+              </MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+        <Creative AdID="601364-Companion">
+          <CompanionAds>
+            <Companion width="300" height="250">
+              <StaticResource creativeType="image/jpeg">
+              http://demo.tremormedia.com/proddev/vast/Blistex1.jpg
+              </StaticResource>
+              <TrackingEvents>
+                <Tracking event="creativeView">http://myTrackingURL/firstCompanionCreativeView</Tracking>
+              </TrackingEvents>
+              <CompanionClickThrough>http://www.tremormedia.com</CompanionClickThrough>
+            </Companion>
+            <Companion width="728" height="90">
+              <StaticResource creativeType="image/jpeg">
+              http://demo.tremormedia.com/proddev/vast/728x90_banner1.jpg
+              </StaticResource>
+              <CompanionClickThrough>http://www.tremormedia.com</CompanionClickThrough>
+            </Companion>
+          </CompanionAds>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>

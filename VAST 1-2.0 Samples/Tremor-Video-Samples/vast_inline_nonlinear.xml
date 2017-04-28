@@ -1,0 +1,56 @@
+<VAST version="2.0">
+  <Ad id="602678">
+    <InLine>
+      <AdSystem>Acudeo Compatible</AdSystem>
+      <AdTitle>NonLinear Test Campaign 1</AdTitle>
+      <Description>NonLinear Test Campaign 1</Description>
+      <Survey>http://mySurveyURL/survey</Survey>
+      <Error>http://myErrorURL/error</Error>
+      <Impression>http://myTrackingURL/impression</Impression>
+      <Creatives>
+        <Creative AdID="602678-NonLinear">
+          <NonLinearAds>
+            <TrackingEvents>
+              <Tracking event="creativeView">http://myTrackingURL/nonlinear/creativeView</Tracking>
+              <Tracking event="expand">http://myTrackingURL/nonlinear/expand</Tracking>
+              <Tracking event="collapse">http://myTrackingURL/nonlinear/collapse</Tracking>
+              <Tracking event="acceptInvitation">http://myTrackingURL/nonlinear/acceptInvitation</Tracking>
+              <Tracking event="close">http://myTrackingURL/nonlinear/close</Tracking>
+            </TrackingEvents>
+            <NonLinear height="50" width="300" minSuggestedDuration="00:00:15">
+              <StaticResource creativeType="image/jpeg">
+              http://demo.tremormedia.com/proddev/vast/50x300_static.jpg
+              </StaticResource>
+              <NonLinearClickThrough>http://www.tremormedia.com</NonLinearClickThrough>
+            </NonLinear>
+            <NonLinear height="50" width="450" minSuggestedDuration="00:00:20">
+              <StaticResource creativeType="image/jpeg">
+              http://demo.tremormedia.com/proddev/vast/50x450_static.jpg
+              </StaticResource>
+              <NonLinearClickThrough>http://www.tremormedia.com</NonLinearClickThrough>
+            </NonLinear>
+          </NonLinearAds>
+        </Creative>
+        <Creative AdID="602678-Companion">
+          <CompanionAds>
+            <Companion width="300" height="250">
+              <StaticResource creativeType="application/x-shockwave-flash">
+              http://demo.tremormedia.com/proddev/vast/300x250_companion_1.swf
+              </StaticResource>
+              <CompanionClickThrough>http://www.tremormedia.com</CompanionClickThrough>
+            </Companion>
+            <Companion width="728" height="90">
+              <StaticResource creativeType="image/jpeg">
+              http://demo.tremormedia.com/proddev/vast/728x90_banner1.jpg
+              </StaticResource>
+              <TrackingEvents>
+                <Tracking event="creativeView">http://myTrackingURL/secondCompanion</Tracking>
+              </TrackingEvents>
+              <CompanionClickThrough>http://www.tremormedia.com</CompanionClickThrough>
+            </Companion>
+          </CompanionAds>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>

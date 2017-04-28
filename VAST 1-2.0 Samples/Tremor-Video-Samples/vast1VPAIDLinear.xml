@@ -1,0 +1,34 @@
+<VideoAdServingTemplate>
+  <Ad id="preroll-1">
+    <InLine>
+      <AdSystem>scanscout</AdSystem>
+      <AdTitle>5773100</AdTitle>
+      <Video>
+        <Duration>00:00:01</Duration>
+        <AdID>preroll-1</AdID>
+        <AdParameters apiFramework="vpaid"/>
+        <MediaFiles>
+          <MediaFile width="370" type="application/x-shockwave-flash" height="270">
+            <URL>
+            <![CDATA[
+            http://static.scanscout.com/ads/vpaidad3.swf?adData=http%3A//app.scanscout.com/ssframework/adStreamJSController.xml%3Fa%3Dgetadscheduleforcontent%26PI%3D567%26scheduleVersion%3Dnull%26HI%3D567|preroll|-32349328493284293%26AI%3D0
+            ]]>
+            </URL>
+          </MediaFile>
+        </MediaFiles>
+      </Video>
+      <CompanionAds>
+        <Companion width="300" resourceType="HTML" id="573242" height="250">
+          <Code>
+          <![CDATA[
+          <A onClick="var i= new Image(1,1); i.src='http://app.scanscout.com/ssframework/log/log.png?a=logitemaction&RI=573242&CbC=1&CbF=true&EC=0&RC=0&SmC=2&CbM=1.0E-5&VI=44182204&admode=preroll&PRI=-32349328493284293&RprC=5&ADsn=20&VcaI=416&RrC=1&VgI=13fbab4090333fc8d691b4c61d7bd98e&AVI=142&Ust=ma&Uctry=us&CI=1247549&AC=4&PI=567&Udma=506&ADI=5773100&VclF=true';" HREF="http://vaseline.com" target="_blank">
+           <IMG SRC="http://media.scanscout.com/ads/vaseline300x250Companion.jpg" BORDER=0 WIDTH=300 HEIGHT=250 ALT="Click Here">
+           </A>
+           <img src="http://app.scanscout.com/ssframework/log/log.png?a=logitemaction&RI=573242&CbC=1&CbF=true&EC=1&RC=0&SmC=2&CbM=1.0E-5&VI=44182204&admode=preroll&PRI=-342394298999&RprC=5&ADsn=20&VcaI=416&RrC=1&VgI=4234238492842jjjk&AVI=142&Ust=ma&Uctry=us&CI=1247549&AC=4&PI=567&Udma=506&ADI=5773100&VclF=true" height="1" width="1">
+          ]]>
+          </Code>
+        </Companion>
+      </CompanionAds>
+    </InLine>
+  </Ad>
+</VideoAdServingTemplate>

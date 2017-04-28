@@ -1,0 +1,44 @@
+<VAST version="2.0">
+  <Ad id="602867">
+    <Wrapper>
+      <AdSystem>Acudeo Compatible</AdSystem>
+      <VASTAdTagURI>
+      http://demo.tremormedia.com/proddev/vast/vast_inline_nonlinear3.xml
+      </VASTAdTagURI>
+      <Impression>http://myTrackingURL/wrapper/impression</Impression>
+      <Creatives>
+        <Creative AdID="602867">
+          <Linear>
+            <TrackingEvents></TrackingEvents>
+          </Linear>
+        </Creative>
+        <Creative AdID="602867-NonLinearTracking">
+          <NonLinearAds>
+            <TrackingEvents></TrackingEvents>
+          </NonLinearAds>
+        </Creative>
+        <Creative AdID="602867-Companion">
+          <CompanionAds>
+            <Companion width="300" height="250">
+              <StaticResource creativeType="image/jpeg">
+              http://demo.tremormedia.com/proddev/vast/300x250_banner1.jpg
+              </StaticResource>
+              <TrackingEvents>
+                <Tracking event="creativeView">
+                http://myTrackingURL/wrapper/firstCompanionCreativeView
+                </Tracking>
+              </TrackingEvents>
+              <CompanionClickThrough>http://www.tremormedia.com</CompanionClickThrough>
+              </Companion>
+            <Companion width="728" height="90">
+              <StaticResource creativeType="image/jpeg">
+              http://demo.tremormedia.com/proddev/vast/728x90_banner1.jpg
+              </StaticResource>
+              <CompanionClickThrough>http://www.tremormedia.com</CompanionClickThrough>
+            </Companion>
+          </CompanionAds>
+        </Creative>
+      </Creatives>
+    </Wrapper>
+  </Ad>
+</VAST>

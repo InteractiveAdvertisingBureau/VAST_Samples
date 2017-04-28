@@ -1,0 +1,40 @@
+<VAST version="2.0">
+  <Ad id="602867">
+    <Wrapper>
+      <AdSystem>Acudeo Compatible</AdSystem>
+      <VASTAdTagURI>
+      http://demo.tremormedia.com/proddev/vast/vast_inline_nonlinear2.xml
+      </VASTAdTagURI>
+      <Error>http://myErrorURL/wrapper/error</Error>
+      <Impression>http://myTrackingURL/wrapper/impression</Impression>
+      <Creatives>
+        <Creative AdID="602867">
+          <Linear>
+            <TrackingEvents></TrackingEvents>
+          </Linear>
+        </Creative>
+        <Creative AdID="602867-NonLinearTracking">
+          <NonLinearAds>
+            <TrackingEvents>
+              <Tracking event="creativeView">
+              http://myTrackingURL/wrapper/nonlinear/creativeView/creativeView
+              </Tracking>
+              <Tracking event="expand">
+              http://myTrackingURL/wrapper/nonlinear/creativeView/expand
+              </Tracking>
+              <Tracking event="collapse">
+              http://myTrackingURL/wrapper/nonlinear/creativeView/collapse
+              </Tracking>
+              <Tracking event="acceptInvitation">
+              http://myTrackingURL/wrapper/nonlinear/creativeView/acceptInvitation
+              </Tracking>
+              <Tracking event="close">
+              http://myTrackingURL/wrapper/nonlinear/creativeView/close
+              </Tracking>
+            </TrackingEvents>
+          </NonLinearAds>
+        </Creative>
+      </Creatives>
+    </Wrapper>
+  </Ad>
+</VAST>
