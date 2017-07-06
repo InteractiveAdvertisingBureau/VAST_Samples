@@ -6,18 +6,18 @@
             <Pricing model="cpm" currency="USD">
                 <![CDATA[ 25.00 ]]>
             </Pricing>
-            <Error>http://myErrorURL/error</Error>
-            <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
+            <Error>http://example.com/error</Error>
+            <Impression id="Impression-ID">http://example.com/track/impression</Impression>
             <Creatives>
                 <Creative id="5480" sequence="1">
                     <Linear>
                         <Duration>00:00:16</Duration>
                         <TrackingEvents>
-                           <Tracking event="start" offset="10:05:20">http://myTrackingURL/start</Tracking>
-                            <Tracking event="firstQuartile">http://myTrackingURL/firstQuartile</Tracking>
-                            <Tracking event="midpoint">http://myTrackingURL/midpoint</Tracking>
-                            <Tracking event="thirdQuartile">http://myTrackingURL/thirdQuartile</Tracking>
-                            <Tracking event="complete">http://myTrackingURL/complete</Tracking>
+                           <Tracking event="start" offset="10:05:20">http://example.com/tracking/start</Tracking>
+                            <Tracking event="firstQuartile">http://example.com/tracking/firstQuartile</Tracking>
+                            <Tracking event="midpoint">http://example.com/tracking/midpoint</Tracking>
+                            <Tracking event="thirdQuartile">http://example.com/tracking/thirdQuartile</Tracking>
+                            <Tracking event="complete">http://example.com/tracking/complete</Tracking>
                         </TrackingEvents>
                         <VideoClicks>
                             <ClickThrough id="blog">

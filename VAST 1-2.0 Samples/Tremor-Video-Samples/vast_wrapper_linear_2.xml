@@ -5,7 +5,7 @@
       <VASTAdTagURI>
       http://demo.tremormedia.com/proddev/vast/vast_inline_linear.xml
       </VASTAdTagURI>
-      <Impression>http://myTrackingURL/wrapper/impression</Impression>
+      <Impression>http://example.com/trackingurl/wrapper/impression</Impression>
       <Creatives>
         <Creative AdID="602833">
           <Linear>
@@ -20,7 +20,7 @@
               </StaticResource>
               <TrackingEvents>
                 <Tracking event="creativeView">
-                http://myTrackingURL/wrapper/firstCompanionCreativeView
+                http://example.com/trackingurl/wrapper/firstCompanionCreativeView
                 </Tracking>
               </TrackingEvents>
               <CompanionClickThrough>http://www.tremormedia.com</CompanionClickThrough>

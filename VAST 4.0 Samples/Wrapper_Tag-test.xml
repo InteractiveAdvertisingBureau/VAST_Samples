@@ -2,8 +2,8 @@
     <Ad id="20011" sequence="1" conditionalAd="false">
         <Wrapper followAdditionalWrappers="0" allowMultipleAds="1" fallbackOnNoAd="0">
             <AdSystem version="4.0">iabtechlab</AdSystem>
-            <Error>http://myErrorURL/error</Error>
-            <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
+            <Error>http://example.com/error</Error>
+            <Impression id="Impression-ID">http://example.com/track/impression</Impression>
             <Creatives>
                 <Creative id="5480" sequence="1" adId="2447226">
                   <CompanionAds>

@@ -4,7 +4,7 @@
             <AdSystem version="4.0">iabtechlab</AdSystem>
             <Error>
             <![CDATA[
-            http://myErrorURL/error
+            http://example.com/error
             ]]>
             </Error>
             <Extensions>
@@ -16,7 +16,7 @@
             </Extensions>
             <Impression id="Impression-ID">
             <![CDATA[
-            http://myTrackingURL/impression
+            http://example.com/track/impression
             ]]>
             </Impression>
             <Pricing model="cpm" currency="USD">
@@ -41,7 +41,7 @@
                                 <![CDATA[http://iabtechlab.com]]>
                             </NonLinearClickThrough>
                             <NonLinearClickTracking>
-                                <![CDATA[http://myTrackingURL/clickTracking]]>
+                                <![CDATA[http://example.com/trackingurl/clickTracking]]>
                             </NonLinearClickTracking>
                         </NonLinear>
                     </NonLinearAds>

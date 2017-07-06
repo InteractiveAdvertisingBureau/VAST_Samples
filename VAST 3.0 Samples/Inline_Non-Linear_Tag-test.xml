@@ -13,12 +13,12 @@
             </Pricing>
             <Error>
             <![CDATA[
-            http://myErrorURL/error
+            http://example.com/error
             ]]>
             </Error>
             <Impression id="Impression-ID">
             <![CDATA[
-            http://myTrackingURL/impression
+            http://example.com/track/impression
             ]]>
             </Impression>
 
@@ -33,7 +33,7 @@
                             </StaticResource>
 
                             <NonLinearClickTracking>
-                                <![CDATA[http://myTrackingURL/clickTracking]]>
+                                <![CDATA[http://example.com/trackingurl/clickTracking]]>
                             </NonLinearClickTracking>
         					<NonLinearClickThrough>
         						<![CDATA[http://iabtechlab.com]]>

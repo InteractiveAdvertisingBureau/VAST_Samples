@@ -5,30 +5,30 @@
       <VASTAdTagURI>
       http://demo.tremormedia.com/proddev/vast/vast_inline_linear.xml
       </VASTAdTagURI>
-      <Error>http://myErrorURL/wrapper/error</Error>
-      <Impression>http://myTrackingURL/wrapper/impression</Impression>
+      <Error>http://example.com/wrapper/error</Error>
+      <Impression>http://example.com/trackingurl/wrapper/impression</Impression>
       <Creatives>
         <Creative AdID="602833">
           <Linear>
             <TrackingEvents>
-              <Tracking event="creativeView">http://myTrackingURL/wrapper/creativeView</Tracking>
-              <Tracking event="start">http://myTrackingURL/wrapper/start</Tracking>
-              <Tracking event="midpoint">http://myTrackingURL/wrapper/midpoint</Tracking>
-              <Tracking event="firstQuartile">http://myTrackingURL/wrapper/firstQuartile</Tracking>
-              <Tracking event="thirdQuartile">http://myTrackingURL/wrapper/thirdQuartile</Tracking>
-              <Tracking event="complete">http://myTrackingURL/wrapper/complete</Tracking>
-              <Tracking event="mute">http://myTrackingURL/wrapper/mute</Tracking>
-              <Tracking event="unmute">http://myTrackingURL/wrapper/unmute</Tracking>
-              <Tracking event="pause">http://myTrackingURL/wrapper/pause</Tracking>
-              <Tracking event="resume">http://myTrackingURL/wrapper/resume</Tracking>
-              <Tracking event="fullscreen">http://myTrackingURL/wrapper/fullscreen</Tracking>
+              <Tracking event="creativeView">http://example.com/trackingurl/wrapper/creativeView</Tracking>
+              <Tracking event="start">http://example.com/trackingurl/wrapper/start</Tracking>
+              <Tracking event="midpoint">http://example.com/trackingurl/wrapper/midpoint</Tracking>
+              <Tracking event="firstQuartile">http://example.com/trackingurl/wrapper/firstQuartile</Tracking>
+              <Tracking event="thirdQuartile">http://example.com/trackingurl/wrapper/thirdQuartile</Tracking>
+              <Tracking event="complete">http://example.com/trackingurl/wrapper/complete</Tracking>
+              <Tracking event="mute">http://example.com/trackingurl/wrapper/mute</Tracking>
+              <Tracking event="unmute">http://example.com/trackingurl/wrapper/unmute</Tracking>
+              <Tracking event="pause">http://example.com/trackingurl/wrapper/pause</Tracking>
+              <Tracking event="resume">http://example.com/trackingurl/wrapper/resume</Tracking>
+              <Tracking event="fullscreen">http://example.com/trackingurl/wrapper/fullscreen</Tracking>
             </TrackingEvents>
           </Linear>
           </Creative>
         <Creative>
           <Linear>
             <VideoClicks>
-              <ClickTracking>http://myTrackingURL/wrapper/click</ClickTracking>
+              <ClickTracking>http://example.com/trackingurl/wrapper/click</ClickTracking>
             </VideoClicks>
           </Linear>
         </Creative>

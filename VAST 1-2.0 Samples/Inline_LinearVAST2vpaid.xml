@@ -4,7 +4,7 @@
 		<AdSystem>2.0</AdSystem>
 		<AdTitle>5773100</AdTitle>
 		<Error>myErrorUrl.com</Error>
-        <Impression>myImpressionUrl.com</Impression>
+        <Impression>http://example.com/trackingurl/impression</Impression>
 		<Creatives>
 			<Creative>
 				<Linear>

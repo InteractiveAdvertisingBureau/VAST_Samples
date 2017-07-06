@@ -4,9 +4,9 @@
             <AdSystem version="4.0">iabtechlab</AdSystem>
             <VASTAdTagURI><![CDATA[https://raw.githubusercontent.com/InteractiveAdvertisingBureau/VAST_Samples/master/VAST%203.0%20Samples/Inline_Companion_Tag-test.xml]]></VASTAdTagURI>
 
-            <Error>http://myErrorURL/error</Error>
+            <Error>http://example.com/error</Error>
 
-            <Impression>http://myTrackingURL/impression</Impression>
+            <Impression>http://example.com/track/impression</Impression>
             <Creatives>
                 <Creative id="5480" sequence="1">
                     <CompanionAds>

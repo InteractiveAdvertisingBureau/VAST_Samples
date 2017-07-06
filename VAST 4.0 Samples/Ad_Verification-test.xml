@@ -2,7 +2,7 @@
     <Ad id="20001" sequence="1" conditionalAd="false">
         <InLine>
             <AdSystem version="4.0">iabtechlab</AdSystem>
-            <Error>http://myErrorURL/error</Error>
+            <Error>http://example.com/error</Error>
             <Extensions>
                 <Extension type="iab-Count">
                     <total_available>
@@ -10,7 +10,7 @@
                     </total_available>
                 </Extension>
             </Extensions>
-            <Impression id="Impression-ID">http://myTrackingURL/impression</Impression>
+            <Impression id="Impression-ID">http://example.com/track/impression</Impression>
             <Pricing model="cpm" currency="USD">
                 <![CDATA[ 25.00 ]]>
             </Pricing>
@@ -34,11 +34,11 @@
                   <UniversalAdId idRegistry="Ad-ID" idValue="8465">8465</UniversalAdId>
                     <Linear>
                         <TrackingEvents>
-                           <Tracking event="start" offset="12:22:11">http://myTrackingURL/start</Tracking>
-                            <Tracking event="firstQuartile">http://myTrackingURL/firstQuartile</Tracking>
-                            <Tracking event="midpoint">http://myTrackingURL/midpoint</Tracking>
-                            <Tracking event="thirdQuartile">http://myTrackingURL/thirdQuartile</Tracking>
-                            <Tracking event="complete">http://myTrackingURL/complete</Tracking>
+                           <Tracking event="start" offset="12:22:11">http://example.com/tracking/start</Tracking>
+                            <Tracking event="firstQuartile">http://example.com/tracking/firstQuartile</Tracking>
+                            <Tracking event="midpoint">http://example.com/tracking/midpoint</Tracking>
+                            <Tracking event="thirdQuartile">http://example.com/tracking/thirdQuartile</Tracking>
+                            <Tracking event="complete">http://example.com/tracking/complete</Tracking>
                         </TrackingEvents>
                         <Duration>00:00:16</Duration>
                         <MediaFiles>
@@ -46,10 +46,10 @@
                                 <![CDATA[https://iabtechlab.com/wp-content/uploads/2016/07/VAST-4.0-Short-Intro.mp4]]>
                             </MediaFile>
                             <MediaFile id="5244" delivery="progressive" type="video/mp4" bitrate="1000" width="854" height="480" minBitrate="700" maxBitrate="1500" scalable="1" maintainAspectRatio="1" codec="0">
-                                <![CDATA[http://url.com/content/mid_resolution.mp4]]>
+                                <![CDATA[http://example.com/mediafile/mid_resolution.mp4]]>
                             </MediaFile>
                             <MediaFile id="5246" delivery="progressive" type="video/mp4" bitrate="600" width="640" height="360" minBitrate="500" maxBitrate="700" scalable="1" maintainAspectRatio="1" codec="0">
-                                <![CDATA[http://url.com/content/low_resolution.mp4]]>
+                                <![CDATA[http://example.com/mediafile/low_resolution.mp4]]>
                             </MediaFile>
                         </MediaFiles>
 

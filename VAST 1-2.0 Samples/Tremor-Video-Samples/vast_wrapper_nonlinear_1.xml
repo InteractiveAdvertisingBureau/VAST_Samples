@@ -5,8 +5,8 @@
       <VASTAdTagURI>
       http://demo.tremormedia.com/proddev/vast/vast_inline_nonlinear2.xml
       </VASTAdTagURI>
-      <Error>http://myErrorURL/wrapper/error</Error>
-      <Impression>http://myTrackingURL/wrapper/impression</Impression>
+      <Error>http://example.com/wrapper/error</Error>
+      <Impression>http://example.com/trackingurl/wrapper/impression</Impression>
       <Creatives>
         <Creative AdID="602867">
           <Linear>
@@ -17,19 +17,19 @@
           <NonLinearAds>
             <TrackingEvents>
               <Tracking event="creativeView">
-              http://myTrackingURL/wrapper/nonlinear/creativeView/creativeView
+              http://example.com/trackingurl/wrapper/nonlinear/creativeView/creativeView
               </Tracking>
               <Tracking event="expand">
-              http://myTrackingURL/wrapper/nonlinear/creativeView/expand
+              http://example.com/trackingurl/wrapper/nonlinear/creativeView/expand
               </Tracking>
               <Tracking event="collapse">
-              http://myTrackingURL/wrapper/nonlinear/creativeView/collapse
+              http://example.com/trackingurl/wrapper/nonlinear/creativeView/collapse
               </Tracking>
               <Tracking event="acceptInvitation">
-              http://myTrackingURL/wrapper/nonlinear/creativeView/acceptInvitation
+              http://example.com/trackingurl/wrapper/nonlinear/creativeView/acceptInvitation
               </Tracking>
               <Tracking event="close">
-              http://myTrackingURL/wrapper/nonlinear/creativeView/close
+              http://example.com/trackingurl/wrapper/nonlinear/creativeView/close
               </Tracking>
             </TrackingEvents>
           </NonLinearAds>
