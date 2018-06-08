@@ -18,6 +18,7 @@
       <Pricing model="cpm" currency="USD">
         <![CDATA[ 25.00 ]]>
       </Pricing>
+      <AdServingId>ADID_INnonLINEARTEST_ABC123</AdServingId>
       <AdTitle>
         <![CDATA[VAST 4.0 Pilot - Scenario 5]]>
       </AdTitle>

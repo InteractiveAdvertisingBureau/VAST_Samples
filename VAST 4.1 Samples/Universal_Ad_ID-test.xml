@@ -14,6 +14,7 @@
       <Pricing model="cpm" currency="USD">
         <![CDATA[ 25.00 ]]>
       </Pricing>
+      <AdServingId>ADID_UNIADIDTEST_ABC123</AdServingId>
       <AdTitle>iabtechlab video ad</AdTitle>
       <Category authority="http://www.iabtechlab.com/categoryauthority">AD CONTENT description category</Category>
       <Creatives>
@@ -27,6 +28,11 @@
               <Tracking event="thirdQuartile">http://example.com/tracking/thirdQuartile</Tracking>
               <Tracking event="complete">http://example.com/tracking/complete</Tracking>
             </TrackingEvents>
+            <VideoClicks>
+              <ClickThrough id="blog">
+                <![CDATA[https://iabtechlab.com]]>
+              </ClickThrough>
+            </VideoClicks>
             <Duration>00:00:16</Duration>
             <MediaFiles>
               <MediaFile id="5241" delivery="progressive" type="video/mp4" bitrate="2000" width="1280" height="720" minBitrate="1500" maxBitrate="2500" scalable="1" maintainAspectRatio="1" codec="0">
@@ -39,11 +45,6 @@
                 <![CDATA[https://iabtechlab.com/wp-content/uploads/2017/12/VAST-4.0-Short-Intro-low-resolution.mp4]]>
               </MediaFile>
             </MediaFiles>
-            <VideoClicks>
-              <ClickThrough id="blog">
-                <![CDATA[https://iabtechlab.com]]>
-              </ClickThrough>
-            </VideoClicks>
           </Linear>
         </Creative>
       </Creatives>
