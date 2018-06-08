@@ -1,5 +1,5 @@
 <VAST version="4.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.iab.com/VAST">
-  <Ad id="20001" sequence="1" conditionalAd="false">
+  <Ad id="20002" sequence="1" conditionalAd="false">
     <InLine>
       <AdSystem version="4.0">iabtechlab</AdSystem>
       <Error>http://example.com/error</Error>
@@ -14,32 +14,25 @@
       <Pricing model="cpm" currency="USD">
         <![CDATA[ 25.00 ]]>
       </Pricing>
+      <AdServingId>ADID_CONDTEST_ABC123</AdServingId>
       <AdTitle>iabtechlab video ad</AdTitle>
-      <AdVerifications>
-        <Verification>
-          <JavaScriptResource>
-            <![CDATA[https://verificationcompany1.com/verification_script1.js]]>
-          </JavaScriptResource>
-        </Verification>
-        <Verification>
-          <JavaScriptResource>
-            <![CDATA[https://verificationcompany.com/untrusted.js]]>
-          </JavaScriptResource>
-        </Verification>
-      </AdVerifications>
-      <Advertiser>IAB Sample Company</Advertiser>
-      <Category authority="foo" />
+      <Category authority="http://www.iabtechlab.com/categoryauthority">AD CONTENT description category</Category>
       <Creatives>
-        <Creative id="5480" sequence="1" adId="2447226">
+        <Creative id="5480" sequence="1" adId="2447226" apiFramework="VAST">
           <UniversalAdId idRegistry="Ad-ID" idValue="8465">8465</UniversalAdId>
           <Linear>
             <TrackingEvents>
-              <Tracking event="start" offset="12:22:11">http://example.com/tracking/start</Tracking>
+              <Tracking event="start" offset="12:20:10">http://example.com/tracking/start</Tracking>
               <Tracking event="firstQuartile">http://example.com/tracking/firstQuartile</Tracking>
               <Tracking event="midpoint">http://example.com/tracking/midpoint</Tracking>
               <Tracking event="thirdQuartile">http://example.com/tracking/thirdQuartile</Tracking>
               <Tracking event="complete">http://example.com/tracking/complete</Tracking>
             </TrackingEvents>
+            <VideoClicks>
+              <ClickThrough id="blog">
+                <![CDATA[https://iabtechlab.com]]>
+              </ClickThrough>
+            </VideoClicks>
             <Duration>00:00:16</Duration>
             <MediaFiles>
               <MediaFile id="5241" delivery="progressive" type="video/mp4" bitrate="2000" width="1280" height="720" minBitrate="1500" maxBitrate="2500" scalable="1" maintainAspectRatio="1" codec="0">
@@ -52,11 +45,6 @@
                 <![CDATA[https://iabtechlab.com/wp-content/uploads/2017/12/VAST-4.0-Short-Intro-low-resolution.mp4]]>
               </MediaFile>
             </MediaFiles>
-            <VideoClicks>
-              <ClickThrough id="blog">
-                <![CDATA[https://iabtechlab.com]]>
-              </ClickThrough>
-            </VideoClicks>
           </Linear>
         </Creative>
       </Creatives>

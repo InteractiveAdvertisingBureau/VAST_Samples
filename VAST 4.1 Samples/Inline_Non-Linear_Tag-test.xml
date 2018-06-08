@@ -1,0 +1,47 @@
+<VAST version="4.0" xmlns="http://www.iab.com/VAST">
+  <Ad id="20005" sequence="1" conditionalAd="false">
+    <InLine>
+      <AdSystem version="4.0">iabtechlab</AdSystem>
+      <Error>
+        <![CDATA[http://example.com/error]]>
+      </Error>
+      <Extensions>
+        <Extension type="iab-Count">
+          <total_available>
+            <![CDATA[ 2 ]]>
+          </total_available>
+        </Extension>
+      </Extensions>
+      <Impression id="Impression-ID">
+        <![CDATA[http://example.com/track/impression]]>
+      </Impression>
+      <Pricing model="cpm" currency="USD">
+        <![CDATA[ 25.00 ]]>
+      </Pricing>
+      <AdTitle>
+        <![CDATA[VAST 4.0 Pilot - Scenario 5]]>
+      </AdTitle>
+      <Creatives>
+        <Creative id="5480" sequence="1" adId="2447226">
+          <UniversalAdId idRegistry="Ad-ID" idValue="8465">8465</UniversalAdId>
+          <NonLinearAds>
+            <NonLinear>
+              <StaticResource creativeType="image/png">
+                <![CDATA[http://mms.businesswire.com/media/20150623005446/en/473787/21/iab_tech_lab.jpg]]>
+              </StaticResource>
+              <NonLinearClickThrough>
+                <![CDATA[http://iabtechlab.com]]>
+              </NonLinearClickThrough>
+              <NonLinearClickTracking>
+                <![CDATA[http://example.com/trackingurl/clickTracking]]>
+              </NonLinearClickTracking>
+            </NonLinear>
+          </NonLinearAds>
+        </Creative>
+      </Creatives>
+      <Description>
+        <![CDATA[VAST 4.0 sample tag for Non Linear ad (i.e Overlay ad). Change the StaticResources to have a tag with your own content. Change NonLinear tag's parameters accordingly to view desired results.]]>
+      </Description>
+    </InLine>
+  </Ad>
+</VAST>
