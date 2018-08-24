@@ -18,7 +18,7 @@
       <AdTitle>iabtechlab video ad</AdTitle>
       <Creatives>
         <Creative id="5480" sequence="1" adId="2447226">
-          <UniversalAdId idRegistry="Ad-ID" idValue="8465">8465</UniversalAdId>
+          <UniversalAdId idRegistry="Ad-ID">8465</UniversalAdId>
           <Linear>
             <TrackingEvents>
               <Tracking event="start" offset="09:15:23">http://example.com/tracking/start</Tracking>

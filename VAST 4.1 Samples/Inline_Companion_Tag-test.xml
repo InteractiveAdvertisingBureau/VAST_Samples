@@ -30,7 +30,7 @@
               </CompanionClickThrough>
             </Companion>
           </CompanionAds>
-          <UniversalAdId idRegistry="Ad-ID" idValue="8465">8465</UniversalAdId>
+          <UniversalAdId idRegistry="Ad-ID">8465</UniversalAdId>
         </Creative>
         <Creative id="5480" sequence="1" adId="2447226">
           <Linear>
@@ -59,7 +59,7 @@
               </MediaFile>
             </MediaFiles>
           </Linear>
-          <UniversalAdId idRegistry="Ad-ID" idValue="8465">8465</UniversalAdId>
+          <UniversalAdId idRegistry="Ad-ID">8465</UniversalAdId>
         </Creative>
       </Creatives>
       <Description>

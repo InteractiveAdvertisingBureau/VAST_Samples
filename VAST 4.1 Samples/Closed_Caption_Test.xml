@@ -18,7 +18,7 @@
       <AdTitle>iabtechlab video ad</AdTitle>
       <Creatives>
         <Creative id="5480" sequence="1" adId="2447226">
-          <UniversalAdId idRegistry="Ad-ID" idValue="8465">8465</UniversalAdId>
+          <UniversalAdId idRegistry="Ad-ID">8465</UniversalAdId>
           <Linear>
             <TrackingEvents>
               <Tracking event="start" offset="09:15:23">http://example.com/tracking/start</Tracking>
@@ -35,16 +35,16 @@
             <Duration>00:00:16</Duration>
             <MediaFiles>
 				<ClosedCaptionFiles>
-					<ClosedCaptionFile type="text/srt"  language="en">   
+					<ClosedCaptionFile type="text/srt"  language="en">
 					 <![CDATA[https://mycdn.example.com/creatives/creative001.srt]]>
 					</ClosedCaptionFile>
-					<ClosedCaptionFile type="text/srt" language="fr">   
+					<ClosedCaptionFile type="text/srt" language="fr">
 					 <![CDATA[https://mycdn.example.com/creatives/creative001-1.srt]]>
 					</ClosedCaptionFile>
-					<ClosedCaptionFile type="text/vtt"   language="zh-TW">   
+					<ClosedCaptionFile type="text/vtt"   language="zh-TW">
 					 <![CDATA[https://mycdn.example.com/creatives/creative001.vtt]]>
 					</ClosedCaptionFile>
-					<ClosedCaptionFile type="application/ttml+xml"  language="zh-CH">   
+					<ClosedCaptionFile type="application/ttml+xml"  language="zh-CH">
 					 <![CDATA[https://mycdn.example.com/creatives/creative001.ttml]]>
 					</ClosedCaptionFile>
 				</ClosedCaptionFiles>
