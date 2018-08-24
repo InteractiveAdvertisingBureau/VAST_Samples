@@ -34,21 +34,20 @@
             </VideoClicks>
             <Duration>00:00:16</Duration>
             <MediaFiles>
-				<ClosedCaptionFiles>
-					<ClosedCaptionFile type="text/srt"  language="en">
-					 <![CDATA[https://mycdn.example.com/creatives/creative001.srt]]>
-					</ClosedCaptionFile>
-					<ClosedCaptionFile type="text/srt" language="fr">
-					 <![CDATA[https://mycdn.example.com/creatives/creative001-1.srt]]>
-					</ClosedCaptionFile>
-					<ClosedCaptionFile type="text/vtt"   language="zh-TW">
-					 <![CDATA[https://mycdn.example.com/creatives/creative001.vtt]]>
-					</ClosedCaptionFile>
-					<ClosedCaptionFile type="application/ttml+xml"  language="zh-CH">
-					 <![CDATA[https://mycdn.example.com/creatives/creative001.ttml]]>
-					</ClosedCaptionFile>
-				</ClosedCaptionFiles>
-
+              <ClosedCaptionFiles>
+                <ClosedCaptionFile type="text/srt"  language="en">
+                  <![CDATA[https://mycdn.example.com/creatives/creative001.srt]]>
+                </ClosedCaptionFile>
+                <ClosedCaptionFile type="text/srt" language="fr">
+                  <![CDATA[https://mycdn.example.com/creatives/creative001-1.srt]]>
+                </ClosedCaptionFile>
+                <ClosedCaptionFile type="text/vtt"   language="zh-TW">
+                  <![CDATA[https://mycdn.example.com/creatives/creative001.vtt]]>
+                </ClosedCaptionFile>
+                <ClosedCaptionFile type="application/ttml+xml"  language="zh-CH">
+                  <![CDATA[https://mycdn.example.com/creatives/creative001.ttml]]>
+                </ClosedCaptionFile>
+              </ClosedCaptionFiles>
               <MediaFile id="5241" delivery="progressive" type="video/mp4" bitrate="2000" width="1280" height="720" minBitrate="1500" maxBitrate="2500" scalable="1" maintainAspectRatio="1" codec="0">
                 <![CDATA[https://iabtechlab.com/wp-content/uploads/2016/07/VAST-4.0-Short-Intro.mp4]]>
               </MediaFile>
