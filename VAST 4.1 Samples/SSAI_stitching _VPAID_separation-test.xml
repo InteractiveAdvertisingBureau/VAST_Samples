@@ -2,7 +2,7 @@
   <Ad id="20001" sequence="1" conditionalAd="false">
     <InLine>
       <AdSystem version="4.0">iabtechlab</AdSystem>
-      <Error>http://example.com/error</Error>
+      <Error><![CDATA[https://example.com/error]]></Error>
       <Extensions>
         <Extension type="iab-Count">
           <total_available>
@@ -10,7 +10,7 @@
           </total_available>
         </Extension>
       </Extensions>
-      <Impression id="Impression-ID">http://example.com/track/impression</Impression>
+      <Impression id="Impression-ID"><![CDATA[https://example.com/track/impression]]></Impression>
       <Pricing model="cpm" currency="USD">
         <![CDATA[ 25.00 ]]>
       </Pricing>
@@ -20,22 +20,22 @@
           <UniversalAdId idRegistry="Ad-ID">8465</UniversalAdId>
           <Linear>
             <TrackingEvents>
-              <Tracking event="start" offset="10:32:23">http://example.com/tracking/start</Tracking>
-              <Tracking event="firstQuartile">http://example.com/tracking/firstQuartile</Tracking>
-              <Tracking event="midpoint">http://example.com/tracking/midpoint</Tracking>
-              <Tracking event="thirdQuartile">http://example.com/tracking/thirdQuartile</Tracking>
-              <Tracking event="complete">http://example.com/tracking/complete</Tracking>
+              <Tracking event="start" offset="10:32:23"><![CDATA[https://example.com/tracking/start]]></Tracking>
+              <Tracking event="firstQuartile"><![CDATA[https://example.com/tracking/firstQuartile]]></Tracking>
+              <Tracking event="midpoint"><![CDATA[https://example.com/tracking/midpoint]]></Tracking>
+              <Tracking event="thirdQuartile"><![CDATA[https://example.com/tracking/thirdQuartile]]></Tracking>
+              <Tracking event="complete"><![CDATA[https://example.com/tracking/complete]]></Tracking>
             </TrackingEvents>
             <Duration>00:00:16</Duration>
             <MediaFiles>
               <MediaFile id="5241" delivery="progressive" type="video/mp4" bitrate="2500" width="1280" height="720" minBitrate="1800" maxBitrate="2500" scalable="1" maintainAspectRatio="1" codec="0">
-                <![CDATA[http://cdn.iabcdn.com/website/engineering/vast_4_0_pilot/vast_4.0_pilot-iab-hd.mp4]]>
+                <![CDATA[https://cdn.iabcdn.com/website/engineering/vast_4_0_pilot/vast_4.0_pilot-iab-hd.mp4]]>
               </MediaFile>
               <Mezzanine>
-                <![CDATA[http://pilot.iabtechlab.com/beacon?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235]]>
+                <![CDATA[https://pilot.iabtechlab.com/beacon?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235]]>
               </Mezzanine>
               <InteractiveCreativeFile>
-                <![CDATA[http://pilot.iabtechlab.com/beacon?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235]]>
+                <![CDATA[https://pilot.iabtechlab.com/beacon?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235]]>
               </InteractiveCreativeFile>
             </MediaFiles>
             <VideoClicks>
