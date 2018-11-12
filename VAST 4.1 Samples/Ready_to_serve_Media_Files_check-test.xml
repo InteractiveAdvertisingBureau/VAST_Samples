@@ -18,7 +18,7 @@
       <AdTitle>iabtechlab video ad</AdTitle>
       <Creatives>
         <Creative id="5480" sequence="1" adId="2447226">
-          <UniversalAdId idRegistry="Ad-ID" idValue="8465">8465</UniversalAdId>
+          <UniversalAdId idRegistry="Ad-ID" >8465</UniversalAdId>
           <Linear>
             <TrackingEvents>
               <Tracking event="start" offset="01:28:23">http://example.com/tracking/start</Tracking>
@@ -27,11 +27,6 @@
               <Tracking event="thirdQuartile">http://example.com/tracking/thirdQuartile</Tracking>
               <Tracking event="complete">http://example.com/tracking/complete</Tracking>
             </TrackingEvents>
-            <VideoClicks>
-              <ClickThrough id="blog">
-                <![CDATA[https://iabtechlab.com]]>
-              </ClickThrough>
-            </VideoClicks>
             <Duration>00:00:16</Duration>
             <MediaFiles>
               <MediaFile id="5241" delivery="progressive" type="video/mp4" bitrate="2000" width="1280" height="720" minBitrate="1500" maxBitrate="2500" scalable="1" maintainAspectRatio="1" codec="0">
@@ -44,6 +39,11 @@
                 <![CDATA[https://iabtechlab.com/wp-content/uploads/2017/12/VAST-4.0-Short-Intro-low-resolution.mp4]]>
               </MediaFile>
             </MediaFiles>
+            <VideoClicks>
+              <ClickThrough id="blog">
+                <![CDATA[https://iabtechlab.com]]>
+              </ClickThrough>
+            </VideoClicks>
           </Linear>
         </Creative>
       </Creatives>
