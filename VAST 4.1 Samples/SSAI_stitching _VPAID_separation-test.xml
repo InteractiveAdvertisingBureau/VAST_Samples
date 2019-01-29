@@ -1,7 +1,7 @@
 <VAST version="4.1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.iab.com/VAST">
   <Ad id="20001" sequence="1" conditionalAd="false">
     <InLine>
-      <AdSystem version="4.0">iabtechlab</AdSystem>
+      <AdSystem version="4.1">iabtechlab</AdSystem>
       <Error><![CDATA[https://example.com/error]]></Error>
       <Extensions>
         <Extension type="iab-Count">
@@ -14,7 +14,8 @@
       <Pricing model="cpm" currency="USD">
         <![CDATA[ 25.00 ]]>
       </Pricing>
-      <AdTitle>iabtechlab video ad</AdTitle>
+      <AdServingId>998-ABC-123</AdServingId>
+	  <AdTitle>iabtechlab video ad</AdTitle>
       <Creatives>
         <Creative id="5480" sequence="1" adId="2447226">
           <UniversalAdId idRegistry="Ad-ID">8465</UniversalAdId>
@@ -31,8 +32,8 @@
               <MediaFile id="5241" delivery="progressive" type="video/mp4" bitrate="2500" width="1280" height="720" minBitrate="1800" maxBitrate="2500" scalable="1" maintainAspectRatio="1" codec="0">
                 <![CDATA[https://cdn.iabcdn.com/website/engineering/vast_4_0_pilot/vast_4.0_pilot-iab-hd.mp4]]>
               </MediaFile>
-              <Mezzanine>
-                <![CDATA[https://pilot.iabtechlab.com/beacon?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235]]>
+              <Mezzanine delivery="streaming" width="1280" height="120" type="video/mp4">
+                <![CDATA[rtsp://pilot.iabtechlab.com/rawvideo?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235]]>
               </Mezzanine>
               <InteractiveCreativeFile>
                 <![CDATA[https://pilot.iabtechlab.com/beacon?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235]]>

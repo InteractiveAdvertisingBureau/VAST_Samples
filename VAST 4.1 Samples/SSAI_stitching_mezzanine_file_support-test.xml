@@ -1,12 +1,13 @@
 <VAST version="4.1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.iab.com/VAST">
   <Ad id="20001" sequence="1" conditionalAd="false">
     <InLine>
-      <AdSystem version="4.0">iabtechlab</AdSystem>
+      <AdSystem version="4.1">iabtechlab</AdSystem>
       <Error><![CDATA[https://example.com/error]]></Error>
       <Impression id="Impression-ID"><![CDATA[https://example.com/track/impression]]></Impression>
       <Pricing model="cpm" currency="USD">
         <![CDATA[ 25.00 ]]>
       </Pricing>
+      <AdServingId>768-ABC-123</AdServingId>
       <AdTitle>iabtechlab video ad</AdTitle>
       <Creatives>
         <Creative id="5480" sequence="1" adId="2447226" apiFramework="VPAID">
@@ -30,8 +31,8 @@
               <MediaFile id="5246" delivery="progressive" type="video/mp4" bitrate="600" width="640" height="360" minBitrate="500" maxBitrate="700" scalable="1" maintainAspectRatio="1" codec="0">
                 <![CDATA[https://iabtechlab.com/wp-content/uploads/2017/12/VAST-4.0-Short-Intro-low-resolution.mp4]]>
               </MediaFile>
-              <Mezzanine>
-                <![CDATA[https://pilot.iabtechlab.com/beacon?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235]]>
+              <Mezzanine delivery="streaming" width="1280" height="120" type="video/mp4">
+                <![CDATA[rtsp://pilot.iabtechlab.com/rawvideo?type=complete&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=4235]]>
               </Mezzanine>
             </MediaFiles>
             <VideoClicks>

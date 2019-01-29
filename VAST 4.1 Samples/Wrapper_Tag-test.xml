@@ -7,7 +7,7 @@
       <Creatives>
         <Creative id="5480" sequence="1" adId="2447226">
           <CompanionAds>
-            <Companion id="1232" width="100" height="150" assetWidth="250" assetHeight="200" expandedWidth="350" expandedHeight="250" apiFramework="VPAID" adSlotID="3214" pxratio="1400">
+            <Companion id="1232" width="100" height="150" assetWidth="250" assetHeight="200" expandedWidth="350" expandedHeight="250" apiFramework="VPAID" adSlotId="3214" pxratio="1400">
               <StaticResource creativeType="image/png">
                 <![CDATA[https://www.iab.com/wp-content/uploads/2014/09/iab-tech-lab-6-644x290.png]]>
               </StaticResource>

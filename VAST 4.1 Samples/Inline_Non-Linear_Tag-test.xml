@@ -1,7 +1,7 @@
 <VAST version="4.1" xmlns="http://www.iab.com/VAST">
   <Ad id="20005" sequence="1" conditionalAd="false">
     <InLine>
-      <AdSystem version="4.0">iabtechlab</AdSystem>
+      <AdSystem version="4.1">iabtechlab</AdSystem>
       <Error>
         <![CDATA[https://example.com/error]]>
       </Error>
@@ -26,7 +26,7 @@
         <Creative id="5480" sequence="1" adId="2447226">
           <UniversalAdId idRegistry="Ad-ID">8465</UniversalAdId>
           <NonLinearAds>
-            <NonLinear>
+            <NonLinear width="350" height="350">
               <StaticResource creativeType="image/png">
                 <![CDATA[https://mms.businesswire.com/media/20150623005446/en/473787/21/iab_tech_lab.jpg]]>
               </StaticResource>
