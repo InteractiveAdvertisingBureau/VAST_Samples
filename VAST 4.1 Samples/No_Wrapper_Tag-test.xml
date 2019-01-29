@@ -1,8 +1,8 @@
 <VAST version="4.1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.iab.com/VAST">
   <Ad id="20001" sequence="1" conditionalAd="false">
     <InLine>
-      <AdSystem version="4.0">iabtechlab</AdSystem>
-      <Error>http://example.com/error</Error>
+      <AdSystem version="4.1">iabtechlab</AdSystem>
+      <Error><![CDATA[https://example.com/error]]></Error>
       <Extensions>
         <Extension type="iab-Count">
           <total_available>
@@ -10,7 +10,7 @@
           </total_available>
         </Extension>
       </Extensions>
-      <Impression id="Impression-ID">http://example.com/track/impression</Impression>
+      <Impression id="Impression-ID"><![CDATA[https://example.com/track/impression]]></Impression>
       <Pricing model="cpm" currency="USD">
         <![CDATA[ 25.00 ]]>
       </Pricing>
@@ -18,15 +18,15 @@
       <AdTitle>iabtechlab video ad</AdTitle>
       <Creatives>
         <Creative id="5480" sequence="1" adId="2447226">
-          <UniversalAdId idRegistry="Ad-ID" >8465</UniversalAdId>
+          <UniversalAdId idRegistry="Ad-ID">8465</UniversalAdId>
           <Linear>
             <TrackingEvents>
-              <Tracking event="start">http://example.com/tracking/start</Tracking>
-              <Tracking event="firstQuartile">http://example.com/tracking/firstQuartile</Tracking>
-              <Tracking event="midpoint">http://example.com/tracking/midpoint</Tracking>
-              <Tracking event="thirdQuartile">http://example.com/tracking/thirdQuartile</Tracking>
-              <Tracking event="complete">http://example.com/tracking/complete</Tracking>
-              <Tracking event="progress" offset="00:00:10">http://example.com/tracking/progress-10</Tracking>
+              <Tracking event="start" ><![CDATA[https://example.com/tracking/start]]></Tracking>
+              <Tracking event="progress" offset="00:00:10"><![CDATA[http://example.com/tracking/progress-10]]></Tracking>
+              <Tracking event="firstQuartile"><![CDATA[https://example.com/tracking/firstQuartile]]></Tracking>
+              <Tracking event="midpoint"><![CDATA[https://example.com/tracking/midpoint]]></Tracking>
+              <Tracking event="thirdQuartile"><![CDATA[https://example.com/tracking/thirdQuartile]]></Tracking>
+              <Tracking event="complete"><![CDATA[https://example.com/tracking/complete]]></Tracking>
             </TrackingEvents>
             <Duration>00:00:16</Duration>
             <MediaFiles>
