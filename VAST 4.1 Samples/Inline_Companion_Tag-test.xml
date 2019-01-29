@@ -31,7 +31,6 @@
               </CompanionClickThrough>
             </Companion>
           </CompanionAds>
-          <UniversalAdId idRegistry="Ad-ID">8465</UniversalAdId>
         </Creative>
         <Creative id="5481" sequence="1" adId="2447226">
           <UniversalAdId idRegistry="Ad-ID" >8466</UniversalAdId>
@@ -62,7 +61,6 @@
               </ClickThrough>
             </VideoClicks>
           </Linear>
-          <UniversalAdId idRegistry="Ad-ID">8465</UniversalAdId>
         </Creative>
       </Creatives>
       <Description>
