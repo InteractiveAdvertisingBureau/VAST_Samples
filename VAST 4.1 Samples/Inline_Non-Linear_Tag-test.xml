@@ -3,7 +3,7 @@
     <InLine>
       <AdSystem version="4.1">iabtechlab</AdSystem>
       <Error>
-        <![CDATA[http://example.com/error]]>
+        <![CDATA[https://example.com/error]]>
       </Error>
       <Extensions>
         <Extension type="iab-Count">
@@ -13,7 +13,7 @@
         </Extension>
       </Extensions>
       <Impression id="Impression-ID">
-        <![CDATA[http://example.com/track/impression]]>
+        <![CDATA[https://example.com/track/impression]]>
       </Impression>
       <Pricing model="cpm" currency="USD">
         <![CDATA[ 25.00 ]]>
@@ -24,17 +24,17 @@
       </AdTitle>
       <Creatives>
         <Creative id="5480" sequence="1" adId="2447226">
-          <UniversalAdId idRegistry="Ad-ID" >8465</UniversalAdId>
+          <UniversalAdId idRegistry="Ad-ID">8465</UniversalAdId>
           <NonLinearAds>
             <NonLinear width="350" height="350">
               <StaticResource creativeType="image/png">
-                <![CDATA[http://mms.businesswire.com/media/20150623005446/en/473787/21/iab_tech_lab.jpg]]>
+                <![CDATA[https://mms.businesswire.com/media/20150623005446/en/473787/21/iab_tech_lab.jpg]]>
               </StaticResource>
               <NonLinearClickThrough>
-                <![CDATA[http://iabtechlab.com]]>
+                <![CDATA[https://iabtechlab.com]]>
               </NonLinearClickThrough>
               <NonLinearClickTracking>
-                <![CDATA[http://example.com/trackingurl/clickTracking]]>
+                <![CDATA[https://example.com/tracking/clickTracking]]>
               </NonLinearClickTracking>
             </NonLinear>
           </NonLinearAds>
