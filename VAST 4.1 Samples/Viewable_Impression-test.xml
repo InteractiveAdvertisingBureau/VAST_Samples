@@ -19,7 +19,8 @@
         <Creative id="5480" sequence="1" adId="2447226">
           <Linear>
             <TrackingEvents>
-              <Tracking event="start" offset="09:00:10"><![CDATA[https://example.com/tracking/start]]></Tracking>
+              <Tracking event="start"><![CDATA[http://example.com/tracking/start]]></Tracking>
+              <Tracking event="progress" offset="00:00:10"><![CDATA[http://example.com/tracking/progress-10]]></Tracking>
             </TrackingEvents>
           </Linear>
         </Creative>
