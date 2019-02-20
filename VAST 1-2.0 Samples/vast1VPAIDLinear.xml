@@ -10,7 +10,7 @@
 				<MediaFiles>
 					<MediaFile width="600" type="video/mp4" height="396" delivery="progressive" bitrate="496">
 					<URL>
-					<![CDATA[https://iabtechlab.com/wp-content/uploads/2016/07/VAST-4.0-Short-Intro.mp4]]>
+					<![CDATA[https://iab-publicfiles.s3.amazonaws.com/vast/VAST-4.0-Short-Intro.mp4]]>
 					</URL>
 					</MediaFile>
 				</MediaFiles>
