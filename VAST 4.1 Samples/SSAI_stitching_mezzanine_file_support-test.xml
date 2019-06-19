@@ -7,7 +7,7 @@
       <Pricing model="cpm" currency="USD">
         <![CDATA[ 25.00 ]]>
       </Pricing>
-      <AdServingId>768-ABC-123</AdServingId>
+      <AdServingId>a532d16d-4d7f-4440-bd29-2ec0e693fc81</AdServingId>
       <AdTitle>iabtechlab video ad</AdTitle>
       <Creatives>
         <Creative id="5480" sequence="1" adId="2447226" apiFramework="VPAID">
