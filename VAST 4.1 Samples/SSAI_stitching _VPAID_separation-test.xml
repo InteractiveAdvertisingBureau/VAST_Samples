@@ -30,7 +30,7 @@
             </TrackingEvents>
             <Duration>00:00:16</Duration>
             <MediaFiles>
-              <MediaFile id="5241" delivery="progressive" type="video/mp4" bitrate="2500" width="1280" height="720" minBitrate="1800" maxBitrate="2500" scalable="1" maintainAspectRatio="1" codec="0">
+              <MediaFile id="5241" delivery="progressive" type="video/mp4" bitrate="2500" width="1280" height="720" minBitrate="1800" maxBitrate="2500" scalable="1" maintainAspectRatio="1" codec="H.264">
                 <![CDATA[https://cdn.iabcdn.com/website/engineering/vast_4_0_pilot/vast_4.0_pilot-iab-hd.mp4]]>
               </MediaFile>
               <Mezzanine delivery="streaming" width="1280" height="120" type="video/mp4">
