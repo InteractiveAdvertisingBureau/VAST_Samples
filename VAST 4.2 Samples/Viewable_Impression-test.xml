@@ -1,0 +1,33 @@
+<VAST version="4.2" xmlns="http://www.iab.com/VAST">
+  <Ad id="20010" sequence="1">
+    <Wrapper followAdditionalWrappers="0" allowMultipleAds="1" fallbackOnNoAd="0">
+      <AdSystem version="4.0">iabtechlab</AdSystem>
+      <Error><![CDATA[https://example.com/error]]></Error>
+      <Impression id="Impression-ID"><![CDATA[https://example.com/track/impression]]></Impression>
+      <ViewableImpression id="1543">
+        <Viewable>
+          <![CDATA[https://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243]]>
+        </Viewable>
+        <NotViewable>
+          <![CDATA[https://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243]]>
+        </NotViewable>
+        <ViewUndetermined>
+          <![CDATA[https://search.iabtechlab.com/error?errcode=102&imprid=s5-ea2f7f298e28c0c98374491aec3dfeb1&ts=1243]]>
+        </ViewUndetermined>
+      </ViewableImpression>
+      <Creatives>
+        <Creative id="5480" sequence="1" adId="2447226">
+          <Linear>
+            <TrackingEvents>
+              <Tracking event="start"><![CDATA[http://example.com/tracking/start]]></Tracking>
+              <Tracking event="progress" offset="00:00:10"><![CDATA[http://example.com/tracking/progress-10]]></Tracking>
+            </TrackingEvents>
+          </Linear>
+        </Creative>
+      </Creatives>
+      <VASTAdTagURI>
+        <![CDATA[https://raw.githubusercontent.com/InteractiveAdvertisingBureau/VAST_Samples/master/VAST%204.0%20Samples/Inline_Companion_Tag-test.xml]]>
+      </VASTAdTagURI>
+    </Wrapper>
+  </Ad>
+</VAST>
