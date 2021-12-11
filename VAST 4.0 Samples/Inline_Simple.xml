@@ -2,7 +2,7 @@
   <Ad id="20001" sequence="1" conditionalAd="false">
     <InLine>
       <AdSystem version="4.0">iabtechlab</AdSystem>
-      <Error>http://example.com/error</Error>
+      <Error>http://example.com/error-[ERRORCODE]</Error>
       <Impression id="Impression-ID">http://example.com/track/impression</Impression>
       <Pricing model="cpm" currency="USD">
         <![CDATA[ 25.00 ]]>
