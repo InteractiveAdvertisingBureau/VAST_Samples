@@ -1,7 +1,7 @@
 <VAST version="4.2" xmlns="http://www.iab.com/VAST">
   <Ad id="20005" sequence="1" >
     <InLine>
-      <AdSystem version="1">iabtechlab</AdSystem>
+      <AdSystem version="4.2">iabtechlab</AdSystem>
       <Error>
         <![CDATA[https://example.com/error]]>
       </Error>
@@ -20,7 +20,7 @@
       </Pricing>
       <AdServingId>a532d16d-4d7f-4440-bd29-2ec0e693fc80</AdServingId>
       <AdTitle>
-        <![CDATA[VAST 4.0 Pilot - Scenario 5]]>
+        <![CDATA[VAST 4.2 Pilot - Scenario 5]]>
       </AdTitle>
       <Creatives>
         <Creative id="5480" sequence="1" adId="2447226">
@@ -41,7 +41,7 @@
         </Creative>
       </Creatives>
       <Description>
-        <![CDATA[VAST 4.0 sample tag for Non Linear ad (i.e Overlay ad). Change the StaticResources to have a tag with your own content. Change NonLinear tag's parameters accordingly to view desired results.]]>
+        <![CDATA[VAST 4.2 sample tag for Non Linear ad (i.e Overlay ad). Change the StaticResources to have a tag with your own content. Change NonLinear tag's parameters accordingly to view desired results.]]>
       </Description>
     </InLine>
   </Ad>
