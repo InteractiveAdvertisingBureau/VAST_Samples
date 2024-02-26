@@ -1,16 +1,21 @@
 <VAST version="4.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.iab.com/VAST">
-  <Ad id="20008" sequence="1" conditionalAd="false">
+  <Ad id="20009" sequence="1" conditionalAd="false">
     <InLine>
       <AdSystem version="4.0">iabtechlab</AdSystem>
       <Error>http://example.com/error</Error>
+      <Extensions>
+        <Extension type="iab-Count">
+          <total_available>
+            <![CDATA[ 2 ]]>
+          </total_available>
+        </Extension>
+      </Extensions>
       <Impression id="Impression-ID">http://example.com/track/impression</Impression>
       <Pricing model="cpm" currency="USD">
         <![CDATA[ 25.00 ]]>
       </Pricing>
       <AdTitle>iabtechlab video ad</AdTitle>
-      <Category authority="http://www.iabtechlab.com/categoryauthority">American Cuisine</Category>
-      <Category authority="http://www.iabtechlab.com/categoryauthority">Guitar</Category>
-      <Category authority="http://www.iabtechlab.com/categoryauthority">Vegan</Category>
+      <Category authority="http://www.iabtechlab.com/categoryauthority">AD CONTENT description category</Category>
       <Creatives>
         <Creative id="5480" sequence="1" adId="2447226">
           <UniversalAdId idRegistry="Ad-ID" idValue="8465">8465</UniversalAdId>
@@ -36,8 +41,11 @@
               </MediaFile>
             </MediaFiles>
             <VideoClicks>
+              <ClickTracking>
+                <![CDATA[http://myTrackingURL/clickTracking]]>
+              </ClickTracking>
               <ClickThrough id="blog">
-                <![CDATA[https://iabtechlab.com]]>
+                <![CDATA[https://mikhail.ptv.bender.inetra.ru/redirects/client.php]]>
               </ClickThrough>
             </VideoClicks>
           </Linear>
